@@ -3,3 +3,7 @@ languageCode = "en-us"
 title = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
 contentdir = "content/en"
 publishdir = "public/en"
+
+[params]
+  description = "The peer-reviewed scientific and technology journal. ISSN: 0204-3327"
+  author = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"

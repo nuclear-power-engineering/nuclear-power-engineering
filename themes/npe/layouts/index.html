@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
+{{ partial "header.html" .}}
   <body>
-    <h1>{{.Site.Title}}</h1>
+    <p>{{ printf "%#v" $.Site}}</p>
   </body>
 </html>
