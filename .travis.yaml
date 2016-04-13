@@ -1,0 +1,9 @@
+before_install:
+  - wget https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_amd64.deb
+  - sudo dpkg -i hugo_0.15_amd64.deb
+script: bash ./deploy.sh
+env:
+  global:
+    - GH_REF: github.com/nuclear-power-engineering/nuclear-power-engineering.github.io.git
+    - secure: Ntu+FIO/kIyVmLhNjZ2qvzvkBRxfFwZP75xsdvO6QK78kQC7SHw42RNHeC7NgvT3kw8hdo2uBL9/XYJeROseeQEFhF1oZeSSxeHk3Zl01htPqB0yvUcOq2geJDoeqTqXOrqkn7EsC8GJhz23xT49lYpJQeHJY9VSgr57I4gqA4bJRTBzLdpN18HKCgaHOWuHXOMYJPNqLAPOw3uXtuyV9HRrvhH0/SmRfeSLUwdLEGLz1p9nkvQxhSHHyjW017ymrPUkdIXaUILpNmqkdDUmGHIlonimbGZLYRCUEgoBEOhPDvG7q3vEQtDjvZ61Nh3Cnom+dqasyJq+FcgxxeikN/jemdCTzHvdHDeJFMinRb5PuIG/S0nx/CyBgvibdr1iKkzK5n6E6uWJuOgmOzmqSx5CWse0+V3z7BrrQzWraJyct0Go12OXefvkuJSadANtjqefa2cwzzaca1lOA9B7X0HR5XhOzrIn40TazgxFTLmnYX597BGuIZTwNqcOpB9bZJNeuC8LbWMbMomgJ72MNpdAW3hBeLPlkNstJ6T1lubWPEx6xDFNMK3pDGqYSR3h+/2Yt1j5fQ95kdXeKSLAm2wkG2qg7Mm28AbWbMyADvItb6kQWznN/Bv04AlE54nq7LCkXA9Djpr/TsVfXeEwL73nf15FJ30CUCJY+6o2Dgc=
+	  
