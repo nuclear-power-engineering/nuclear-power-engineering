@@ -1,5 +1,8 @@
-{{ partial "header.html" .}}
+{{ partial "head.html" .}}
+
+
   <body>
-    <p>{{ printf "%#v" $.Site}}</p>
+    {{ partial "header.html" .}}
+    <!--<p>{{ printf "%#v" $.Site}}</p>-->
   </body>
 </html>

@@ -3,8 +3,8 @@
  */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
 }
 
 h1, .h1,
@@ -16,6 +16,18 @@ h6, .h6 {
   margin-top: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  color: #333;
+  color: #FFF;
 }
 
+.topbar {
+  background-color: #48a9e4;
+}
+
+.lang-select {
+  text-align: right;
+}
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
