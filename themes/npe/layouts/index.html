@@ -1,8 +1,38 @@
 {{ partial "head.html" .}}
 
-
   <body>
-    {{ partial "header.html" .}}
-    <!--<p>{{ printf "%#v" $.Site}}</p>-->
-  </body>
-</html>
+    <div class="contrainer">
+    	<div class="jumbotron header">
+    		<p class="journal-img">
+    			<img src="img/cover.jpg" alt="Главная страница">
+    		</p>
+    		<h1>{{ .Site.Title }}</h1>
+    		{{$desc := .Site.Params.description | markdownify |}}
+    		{{ if .Description }}
+      			{{$desc := .Description | markdownify | chomp}}
+    		{{ end }}
+    		<p>{{ $desc }}</p>
+    	</div>
+    </div>
+
+    <div class="navbar">
+    	<div class="container-fluid">
+    		
+    		
+    		<ul class="nav navbar-nav navbar-left">
+    			<li>
+    				<a href="#">Start</a>
+    			</li>
+    		</ul>
+    		<form class="nav navbar-form navbar-right">
+    			<input type="text" class="form-control" placeholder="Search...">
+    		</form>
+    		<ul class="nav navbar-nav navbar-right">
+    			<li>
+    				<a href="#">Stop</a>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+
+{{ partial "footer.html" .}} 
