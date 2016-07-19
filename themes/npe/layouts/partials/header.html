@@ -1,17 +1,1 @@
-<div class="container-fluid  topbar">
-  <div class="container header">
-    <div class="container lang-select">
-      <a href="{{.Site.BaseURL}}en/{{.URL}}" lang="en"><img typeof="foaf:Image" src="img/en.png" width="16" height="12" alt="English" title="English"> English</a>
-      <a href="{{.Site.BaseURL}}" lang="ru"><img typeof="foaf:Image" src="img/ru.png" width="16" height="12" alt="Русский" title="Русский"> Русский</a>
-    </div>
 
-    {{$desc := .Site.Params.description | markdownify |}}
-
-    <div class="row">
-      <div class="col-md-2"><img src="img/cover.jpg"></div>
-      <div class="col-md-8"><h1>{{ .Site.Title }}</h1></div>
-      <div class="col-md-8"><h2>{{ substr $desc  0 150}}</h2></div>
-    </div>
-
-  </div>
-</div>
