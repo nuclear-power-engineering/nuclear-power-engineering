@@ -9,14 +9,34 @@ h1 {
     font-size: 45px;
 }
 
-.lang-switcher {
-    background-color: #fff;
+.language-link {
+    color: #ddd;
 }
 
-.head {
-    background-color: #fff;
+.language-link:hover,
+.language-link:focus {
+    color: #fff;
+}
+
+.title {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.head-md {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ddd;
+    text-shadow: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    text-shadow: none;
 }
 
 .main-menu {
@@ -27,10 +47,10 @@ h1 {
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #fff;
     border: 0;
     border-radius: 0px;
     box-shadow: #fff 0px 0px;
+    background-image: none;
 }
 
 .navbar-nav > .active {
@@ -51,4 +71,6 @@ h1 {
     background-repeat: no-repeat;
     -webkit-box-shadow: none;
     box-shadow: none;
+    color: #fff;
+    text-shadow: none;
 }

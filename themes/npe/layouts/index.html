@@ -39,8 +39,8 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="container lang-switcher text-right">
+    <div class="container-fluid lang-switcher text-right head-md">
+        <div class="container">
             <ul class="list-inline">
                 <li class="en">
                     <a href="/en" class="language-link" lang="en"><img class="language-icon" typeof="foaf:Image" src="img/en.png" width="16" height="12" alt="English" title="English"> English</a>
@@ -50,9 +50,10 @@
                 </li>
             </ul>
         </div>
+    </div>
 
-        <div class="container head">
-
+    <div class="container-fluid title head-md">
+        <div class="container">
             <div class="row">
                 <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
                     <img src="img/cover.jpg" alt="Journal cover" />
@@ -64,13 +65,15 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <div class="container main-menu hidden-xs visible-sm visible-md visible-lg">
 
-            <nav class="navbar navbar-default" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
+    <nav class="navbar navbar-default hidden-xs visible-sm visible-md visible-lg  head-md" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -81,7 +84,7 @@
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <div class="collapse navbar-collapse navbar-ex1-collapse navbar-">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Главная страница</a></li>
                         <li><a href="#">Правила подготовки рукописей</a></li>
@@ -90,11 +93,11 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </div>
-                <!-- /.navbar-collapse -->
-            </nav>
-
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </div>
+    </nav>
+
 
 
 
