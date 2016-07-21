@@ -38,3 +38,17 @@ h1 {
     border-bottom-style: solid;
     border-bottom-width: 3px;
 }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a {
+    background-image: none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
