@@ -3,11 +3,31 @@ body {
 }
 
 .lang-switcher {
-    background-color: #0ff;
+    background-color: #fff;
 }
 
 .head {
     background-color: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.main-menu {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0px;
+    box-shadow: #fff 0px 0px;
+}
+
+.navbar-nav > .active {
+    border-bottom-color: #2196F3;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
 }
