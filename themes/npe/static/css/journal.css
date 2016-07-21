@@ -3,5 +3,11 @@ body {
 }
 
 .lang-switcher {
+    background-color: #0ff;
+}
+
+.head {
     background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
