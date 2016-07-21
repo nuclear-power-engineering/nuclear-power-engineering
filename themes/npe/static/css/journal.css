@@ -1,5 +1,12 @@
 body {
     background-color: #eee;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
 }
 
 .lang-switcher {
@@ -27,7 +34,7 @@ body {
 }
 
 .navbar-nav > .active {
-    border-bottom-color: #2196F3;
+    border-bottom-color: #fff;
     border-bottom-style: solid;
     border-bottom-width: 3px;
 }
