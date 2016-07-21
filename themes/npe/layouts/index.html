@@ -1,103 +1,60 @@
-{{ partial "head.html" .}}
+<!DOCTYPE html>
+<!--
+    {{ partial "head.html" .}}
+-->
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Научный журнал">
+    <meta name="author" content="Известия ВУЗов. Ядерная энергетика">
+    <link rel="icon" href="favicon.ico">
+    <title>Известия ВУЗов. Ядерная энергетика</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/journal.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
 <body>
 
-    <div class="wrapper container">
-        <header>
-            <a href="/"><img src="img/cover.jpg" alt="Journal"></a>
-            <ul class="list-inline pull-right language">
-              <li><a href="/en" lang="en"><img class="language-icon" typeof="foaf:Image" src="img/en.png" width="16" height="12" alt="English" title="English"> English</a></li>
-              <li><a href="/ru" lang="ru"><img class="language-icon" typeof="foaf:Image" src="img/ru.png" width="16" height="12" alt="Русский" title="Русский"> Русский</a></li>
-          </ul>
-
-          <h1 class = "inline ">Известия ВУЗов. Ядерная энергетика</h1>
-
-      </header>
-      <nav class="navbar navbar-default">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Главная страница
-            </a></li>
-            <li><a href="/archive/">Архив номеров</a></li>
-            <li><a href="/subscription/">Подписка</a></li>
-            <li><a href="/contacts/">Контакты</a></li>          
+    <div class="container lang-switcher text-right">
+        <ul class="list-inline">
+            <li class="en">
+                <a href="/en" class="language-link" lang="en"><img class="language-icon" typeof="foaf:Image" src="img/en.png" width="16" height="12" alt="English" title="English"> English</a>
+            </li>
+            <li class="ru">
+                <a href="/" class="language-link session-active active" lang="ru"><img class="language-icon" typeof="foaf:Image" src="img/ru.png" width="16" height="12" alt="Русский" title="Русский"> Русский</a>
+            </li>
         </ul>
-        <form name="search" action="#" method="get" class="form-inline form-search pull-right">
-            <div class="input-group">
-                <label class="sr-only" for="searchInput">Search</label>
-                <input class="form-control" id="searchInput" type="text" name="search" placeholder="поиск">
-                <div class="input-group-btn">
-                    <button type="submit" class="btn btn-primary">найти</button>
-                </div>
-            </div>
-        </form>
-
-    </nav>        
-    <div class="heading"></div>
-    <div class="row">
-        <aside class="col-md-3">
-            <ul class="list-group submenu">
-                <li class="list-group-item active">Общие сведения</li>
-                <li class="list-group-item"><a href="/editors/">Редакционная коллегия</a></li>
-                <li class="list-group-item"><a href="/cheef/">Страница главного редактора</a></li>
-                <li class="list-group-item"><a href="/ethics/">Этика публикаций</a></li>
-                <li class="list-group-item"><a href="/reviewing/">Рецензирование</a></li>
-                <li class="list-group-item"><a href="/contacts/">Контакты</a></li>
-            </ul>
-
-            <ul class="list-group submenu">
-                <li class="list-group-item active">Авторам</li>
-                <li class="list-group-item"><a href="/documents/">Набор документов, сопровождающий публикацию</a></li>
-                <li class="list-group-item"><a href="/rules/">Правила оформления статей</a></li>
-                <li class="list-group-item"><a href="/guide-abstract/">Рекомендации по подготовке аннотаций (рефератов)</a></li>
-                <li class="list-group-item"><a href="/guide-references/">Рекомендации по подготовке ссылок в латинице</a></li>
-            </ul>
-
-            <ul class="list-group submenu">
-                <li class="list-group-item active">Читателям</li>
-                <li class="list-group-item"><a href="/lastest/">Текущий номер журнала</a></li>
-                <li class="list-group-item"><a href="/archive/">Архив номеров журнала</a></li>
-                <li class="list-group-item"><a href="/authors/">Наши авторы</a></li>
-                <li class="list-group-item"><a href="/subscription/">Подписка</a></li>
-            </ul>
-        </aside>
-        <section class="col-md-9">
-            <h3>О Журнале</h3>
-
-            Рецензируемый научно-технический журнал «Известия вузов. Ядерная энергетика» издается на русском языке в Обнинском институте атомной энергетики – филиале федерального государственного автономного образовательного учреждения высшего профессионального образования «Национальный исследовательский ядерный университет «МИФИ» (ИАТЭ НИЯУ МИФИ) более 20 лет (с 1993 г.).
-            Учредители журнала – Государственный комитет Российской Федерации по высшему образованию, Обнинский институт атомной энергетики (1993 г.); Министерство общего и профессионального образования Российской Федерации (с 1999 г.); Ядерное общество России (с 2008 г.).
-            Журнал зарегистрирован в Министерстве печати и информации СССР за номером 0110876 от 01.07.1993 г. и перерегистрирован в Государственном комитете Российской Федерации по печати за номером 0110876 от 23.04.1997 г.
-            В соответствии с ГОСТ-7.56-89 «Издания. Международная стандартная нумерация сериальных изданий» журналу присвоен номер ISSN 0204-3327.
-            Журнал входит в систему Российского индекса научного цитирования (РИНЦ).
-            Журнал входит в Перечень ВАК ведущих рецензируемых научных журналов и изданий, в которых должны быть опубликованы основные научные результаты диссертаций на соискание учёной степени доктора и кандидата наук.
-            Журнал издается в печатной форме с периодичностью четыре номера в год объемом от 100 до 180 страниц и имеет идентичную по содержанию полнотекстовую электронную версию, которая после выхода печатного варианта размещается в интернете на сайте Научной электронной библиотеки (www.elibrary.ru), а также на сайте журнала (journal.iate.obninsk.ru).
-            Тематика журнала – технические, технологические, научные и образовательные аспекты ядерной энергетики, а также применение ядерных технологий в различных отраслях. Более подробное представление тематики дано в рубриках журнала:
-            Актуальные проблемы ядерной энергетики.
-            Атомные электростанции.
-            Физика и техника ядерных реакторов.
-            Теплофизика и теплогидравлика.
-            Топливный цикл и радиоактивные отходы.
-            Безопасность, надежность и диагностика ЯЭУ.
-            Материалы и ядерная энергетика.
-            Химия, физика и техника теплоносителей.
-            Вывод из эксплуатации.
-            Экология энергетики.
-            Экономика ядерной энергетики.
-            Методы прямого преобразования ядерной энергии.
-            Моделирование процессов в объектах ядерной энергетики.
-            Ядерная медицина.
-            Физика в ядерной энергетике.
-            Применение ядерных методов и средств.
-            Подготовка кадров.
-            История науки.
-            В журнале публикуются оригинальные обзоры, статьи и письма в редакцию, посвященные фундаментальным и прикладным проблемам ядерной энергетики и ядерным технологиям. Издаются специальные тематические номера журнала.
-            Подписной индекс в Объединенном каталоге «Пресса России» – 27919.
-        </section>
     </div>
-</div>
-<footer>
-    <div class="container">
-        (c) 2014 Журнал "Известия ВУЗов. Ядерная энергетика"
-    </div>
-</footer>
 
-{{ partial "footer.html" .}} 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<!--
+{{ partial "footer.html" .}}
+ -->
