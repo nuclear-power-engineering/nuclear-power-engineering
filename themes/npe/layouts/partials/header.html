@@ -1,1 +1,97 @@
+<header>
+    <div class="container-fluid lang-switcher text-right head-md">
+        <div class="container">
+            <ul class="list-inline">
+                <li class="en">
+                    <a href="{{ .Site.BaseURL }}en" class="language-link" lang="en"><img class="language-icon" typeof="foaf:Image" src="{{ .Site.BaseURL }}img/en.png" width="16" height="12" alt="English"
+                            title="English"> English</a>
+                </li>
+                <li class="ru">
+                    <a href="{{ .Site.BaseURL }}" class="language-link session-active active" lang="ru"><img class="language-icon" typeof="foaf:Image" src="{{ .Site.BaseURL }}img/ru.png" width="16" height="12" alt="Русский"
+                            title="Русский"> Русский</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="container-fluid title head-md">
+        <div class="container">
+            <div class="row">
+                <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
+                    <img src="{{ .Site.BaseURL }}img/cover.jpg" alt="Journal cover" />
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                    <div class="caption">
+                        <h1>Известия вузов. Ядерная энергетика</h1>
+                        <p>Рецензируемый научно-технический журнал.</p>
+                        <p>ISSN: 0204-3327</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <nav class="navbar navbar-default hidden-xs visible-sm visible-md visible-lg  head-md" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse navbar-">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li><a href="#">Правила подготовки рукописей</a></li>
+                        <li><a href="#">Архив номеров</a></li>
+                        <li><a href="#">Подписка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-default visible-xs hidden-sm hidden-md hidden-lg  head-md" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse navbar-">
+                    <ul class="nav navbar-nav">
+                        <li class="active">Общие сведения</li>
+                        <li><a href="/editors/">Редакционная коллегия</a></li>
+                        <li><a href="/cheef/">Страница главного редактора</a></li>
+                        <li class="active">Авторам</li>
+                        <li><a href="/documents/">Набор документов, сопровождающий публикацию</a></li>
+                        <li><a href="/rules/">Правила оформления статей</a></li>
+                        <li>
+                            тут будет гугл форма
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+</header>
