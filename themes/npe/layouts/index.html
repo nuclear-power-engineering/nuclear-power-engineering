@@ -1,8 +1,6 @@
-{{ partial "head.html" .}}
-
-
-  <body>
-    {{ partial "header.html" .}}
-    <!--<p>{{ printf "%#v" $.Site}}</p>-->
-  </body>
-</html>
+{{ range .Paginator.Pages }}
+    {{ if isset .Params "mainpage" }}
+        {{ .Render "single"}}
+    {{end}}
+{{ end }}
+                       
