@@ -55,6 +55,26 @@ h1 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .16);
 }
 
+.list-group-item,
+.list-group-item:first-child,
+.list-group-item:last-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.list-group-item:first-child,
+.list-group-item:first-child:hover {
+    border-bottom-color: #2196F3;
+    border-left-color: #2196F3;
+    border-top-color: #2196F3;
+    border-right-color: #2196F3;
+    background-image: none;
+    background-color: #2196F3;
+}
+
+
 .navbar-default .navbar-nav > li > a {
     color: #ddd;
     text-shadow: none;
