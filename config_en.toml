@@ -1,7 +1,7 @@
 baseurl = "http://nuclear-power-engineering.github.io/en"
 languageCode = "en-us"
 title = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
-contentdir = "content/en"
+contentdir = "content_en"
 publishdir = "public/en"
 
 [params]
