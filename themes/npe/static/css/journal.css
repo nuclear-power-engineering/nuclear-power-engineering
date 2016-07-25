@@ -99,17 +99,17 @@ h2 {
     padding: 35px;
 }
 
-.list-group-item,
-.list-group-item:first-child,
-.list-group-item:last-child {
+.aside,
+.aside:first-child,
+.aside:last-child {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
 
-.list-group-item:first-child,
-.list-group-item:first-child:hover {
+.aside-item:first-child,
+.aside-item:first-child:hover {
     border-bottom-color: #2196F3;
     border-left-color: #2196F3;
     border-top-color: #2196F3;
