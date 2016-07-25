@@ -1,0 +1,37 @@
+{{ partial "head.html" . }}
+
+<body>
+
+    {{ partial "header.html" . }}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
+                {{ partial "aside.html" . }}
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                <article>
+
+                    <div class="panel panel-default card-md">
+                        <div class="panel-body">
+                            <h2>Выпуски журнала</h2>
+                            <ul class="list-group">
+
+                                {{ $data := .Data }} {{ range $key, $value := .Data.Terms }}
+                                <li class="list-group-item"><span class="badge">{{ len $value }}</span><a href="{{ $key | urlize }}">{{ $key }}</a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+
+</body>
+
+</html>

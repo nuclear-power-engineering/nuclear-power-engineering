@@ -7,3 +7,7 @@ publishdir = "public/en"
 [params]
   description = "The peer-reviewed scientific and technology journal. ISSN: 0204-3327"
   author = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
+  yandex = "8b50870eae29f1b1"
+
+[taxonomies]
+issue = "issue"
