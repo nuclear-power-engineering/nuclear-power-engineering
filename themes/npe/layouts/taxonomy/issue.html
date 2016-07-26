@@ -18,11 +18,36 @@
                         <div class="panel-body">
                             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                             <p class="plank">
-                                <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{dateFormat "02.01.2006" .Date }}
-                                <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
-                                {{ .Params.issue_name }}</a> {{ if .Params.rubric }} <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}"><span class="glyphicons glyphicons-folder-open"></span>
-                                {{ .Params.rubric }}</a> </span> {{ end}}
+                                <span class="plank-span">
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{dateFormat "02.01.2006" .Date }}
+                                </span>
+                                <span class="plank-span">
+                                    <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> {{ .Params.issue_name }}</a>
+                                </span>
+                                {{ if .Params.rubric }}
+                                <span class="plank-span">
+                                     <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}"><span class="glyphicon glyphicon-folder-open"></span> {{ .Params.rubric_name }}</a>
+                                </span>
+                                {{ end}}
                             </p>
+                            {{$base := .Site.BaseURL }}{{ if .Params.authors }}
+                            <p class="plank">
+                                <span class="plank-span">
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                </span>
+                                {{ range .Params.authors }}
+                                <span class="plank-span">
+                                    {{ $author := .}}
+                                    {{ range $key, $value := $.Site.Data.authors}}
+                                        {{if eq $author $key}}
+                                            <a href="{{ $base }}authors/{{ $author | urlize }}">{{ $value.name }}</a>
+                                        {{ end }}
+                                    {{end}}
+                                    
+                                </span> {{ end }}
+
+                            </p>
+                            {{ end}}
                         </div>
                     </div>
                     {{ end }}
