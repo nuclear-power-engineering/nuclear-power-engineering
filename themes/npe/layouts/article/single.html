@@ -12,20 +12,31 @@
             </div>
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <article>
-
-                    {{ range .Data.Pages }}
                     <div class="panel panel-default card-md">
                         <div class="panel-body">
-                            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                            <h2>{{ .Title }}</h2>
                             <p class="plank">
                                 <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{dateFormat "02.01.2006" .Date }}
                                 <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
-                                {{ .Params.issue_name }}</a> {{ if .Params.rubric }} <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}"><span class="glyphicons glyphicons-folder-open"></span>
-                                {{ .Params.rubric }}</a> </span> {{ end}}
+                                {{ .Params.issue_name }}</a>
                             </p>
+
+                            <p>
+                                {{ printf "%#v" .Params.authors }} {{ range .Params.authors }}
+                                <li><a href="{{ .Site.BaseURL }}author/{{ . }}">{{ . }}</a> </li>
+                                {{ end }}
+                            </p>
+
+                            <p>
+                                {{ .Content }}
+                            </p>
+
+                            <div class="panel-body text-center">
+                                <a class="btn btn-primary btn-lg btn-mat" href="{{ .Site.BaseURL }}{{ .Params.file }}" target="_blank" role="button">Открыть PDF файл</a>
+                            </div>
                         </div>
                     </div>
-                    {{ end }}
+
                 </article>
             </div>
         </div>
