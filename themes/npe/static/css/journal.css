@@ -18,17 +18,26 @@ h2 {
 }
 
 .plank,
-.plank > a {
+.plank > a,
+.plank-span,
+.plank-span>a {
     color: #777;
+    margin-right: 10px;
 }
-.plank > a:hover {
+
+.plank > a:hover,
+.plank-span>a:hover {
     color: #333;
+}
+
+.tags,
+.tags>a {
+    margin-right: 0px;
 }
 
 .btn-mat {
     background-color: #2196F3;
     background-image: none;
-
     border-bottom-color: rgba(0, 0, 0, 0.870588);
     border-bottom-style: none;
     border-bottom-width: 0px;
@@ -95,7 +104,8 @@ h2 {
     border-radius: 0px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .16);
 }
-.panel-body{
+
+.panel-body {
     padding: 35px;
 }
 
@@ -117,7 +127,6 @@ h2 {
     background-image: none;
     background-color: #2196F3;
 }
-
 
 .navbar-default .navbar-nav > li > a {
     color: #ddd;
