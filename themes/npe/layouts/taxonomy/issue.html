@@ -31,7 +31,8 @@
                                 {{ end}}
                             </p>
                             {{$base := .Site.BaseURL }}{{ if .Params.authors }}
-                            <p class="plank">
+
+                                <p class="plank">
                                 <span class="plank-span">
                                     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                                 </span>
@@ -40,11 +41,12 @@
                                     {{ $author := .}}
                                     {{ range $key, $value := $.Site.Data.authors}}
                                         {{if eq $author $key}}
-                                            <a href="{{ $base }}authors/{{ $author | urlize }}">{{ $value.name }}</a>
+                                            <a href="{{ $base }}authors/{{ $author | urlize }}">{{ replace $value.name " " "\u00A0"}}</a>
                                         {{ end }}
                                     {{end}}
                                     
                                 </span> {{ end }}
+                            </p>
 
                             </p>
                             {{ end}}
