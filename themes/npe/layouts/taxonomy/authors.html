@@ -1,1 +1,45 @@
-taxonomy/authors.html
+{{ partial "head.html" . }} {{$base := .Site.BaseURL }}
+
+<body>
+
+    {{ partial "header.html" . }}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
+                {{ partial "aside.html" . }}
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                <article>
+
+                    <div class="panel panel-default card-md">
+                        <div class="panel-body">
+                            {{$author := .Title}}
+                            {{ range $.Site.Data.authors}}
+                                {{$author|urlize}} - {{.term | urlize}}
+                                {{if eq (.term | urlize) ($author | urlize)}} 
+                               <h2></h2>
+                               {{end}}
+                            {{end}}
+                            <h2></h2>
+                            term = "AnokhinAN"
+name = "А.Н. Анохин"
+work = "Обнинский институт атомной энергетики НИЯУ МИФИ"
+full_name = "Анохин Алексей Никитич"
+regals = "профессор, доктор технических наук, заведующий кафедрой автоматизированных систем управления"
+email = "mailto:anokhin@obninsk.ru"
+
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+
+</body>
+
+</html>

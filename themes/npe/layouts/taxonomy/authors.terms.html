@@ -1,4 +1,4 @@
-{{ partial "head.html" . }}
+{{ partial "head.html" . }} {{$base := .Site.BaseURL }}
 
 <body>
 
@@ -12,21 +12,43 @@
             </div>
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <article>
-
                     <div class="panel panel-default card-md">
                         <div class="panel-body">
-                            <h2>Наши авторы</h2>
-                            <ul class="list-group">
-
-                                {{ $data := .Data }} {{ range $key, $value := .Data.Terms }}
-                                <li class="list-group-item"><a href="{{ $key | urlize }}">{{ $key }}</a>
-                                </li>
-                                {{ end }}
-                            </ul>
-
-                            
+                            <h2>Наши авторы<a name="top"></a></h2>
+                            <div class="text-center">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    {{ $.Scratch.Set "letter" ""}} {{ range $.Site.Data.authors}} {{ $new_letter := slicestr .full_name 0 1}} {{ if ne $new_letter ($.Scratch.Get "letter")}}
+                                    <li><a href="#{{ $new_letter }}">{{ $new_letter }}</a></li>
+                            {{ $.Scratch.Set "letter" $new_letter}} {{end}} {{ end }}
+                                </ul>
+                            </nav>
+                            </div>
                         </div>
                     </div>
+
+                    {{ $.Scratch.Set "letter" ""}} {{ range $.Site.Data.authors}} {{ $new_letter := slicestr .full_name 0 1}} {{ if ne $new_letter ($.Scratch.Get "letter")}} {{ if ne "" ($.Scratch.Get "letter")}}
+                                </ul>
+                                <p class="plank text-right">
+                                    <a href="#top">В начало</a>
+                                </p>
+                            </div>
+                    </div>
+                    {{ end}}
+                    <div class="panel panel-default card-md">
+                        <div class="panel-body">
+                            <h2><a name="{{ $new_letter }}"></a>{{ $new_letter }}</h2>
+                            <ul class="list-group ">
+                                {{ $.Scratch.Set "letter" $new_letter}} {{end}}
+                                <li class="list-group-item aside"><a href="{{ .term | urlize }}">{{ .full_name }}</a></li>
+                                {{ end }}
+                            </ul>
+                            <p class="plank text-right">
+                                    <a href="#top">В начало</a>
+                            </p>
+                        </div>
+                    </div>
+
                 </article>
             </div>
         </div>

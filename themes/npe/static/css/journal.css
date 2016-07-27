@@ -119,7 +119,8 @@ h2 {
 }
 
 .aside-item:first-child,
-.aside-item:first-child:hover {
+.aside-item:first-child:hover,
+.aside-item-active {
     border-bottom-color: #2196F3;
     border-left-color: #2196F3;
     border-top-color: #2196F3;
