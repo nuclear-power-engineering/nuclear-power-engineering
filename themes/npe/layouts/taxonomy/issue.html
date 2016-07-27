@@ -13,26 +13,26 @@
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <article>
 
-                    {{ range .Data.Pages }}
+                    {{ range .Data.Pages.ByWeight}}
                     <div class="panel panel-default card-md">
                         <div class="panel-body">
                             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                             <p class="plank">
                                 <span class="plank-span">
-                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{dateFormat "02.01.2006" .Date }}
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>                                {{dateFormat "02.01.2006" .Date }}
                                 </span>
                                 <span class="plank-span">
-                                    <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> {{ .Params.issue_name }}</a>
+                                    <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>                                {{ .Params.issue_name }}</a>
                                 </span>
                                 {{ if .Params.rubric }}
                                 <span class="plank-span">
-                                     <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}"><span class="glyphicon glyphicon-folder-open"></span> {{ .Params.rubric_name }}</a>
+                                     <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}"><span class="glyphicon glyphicon-folder-open"></span>                                {{ .Params.rubric_name }}</a>
                                 </span>
                                 {{ end}}
                             </p>
                             {{$base := .Site.BaseURL }}{{ if .Params.authors }}
 
-                                <p class="plank">
+                            <p class="plank">
                                 <span class="plank-span">
                                     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                                 </span>
@@ -48,7 +48,6 @@
                                 </span> {{ end }}
                             </p>
 
-                            </p>
                             {{ end}}
                         </div>
                     </div>

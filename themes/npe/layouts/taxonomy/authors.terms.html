@@ -15,14 +15,16 @@
 
                     <div class="panel panel-default card-md">
                         <div class="panel-body">
-                            <h2>Выпуски журнала</h2>
+                            <h2>Наши авторы</h2>
                             <ul class="list-group">
 
-                                {{ $data := .Data }} {{ range $key, $value := .Data.Terms.Alphabetical.Reverse }}
-                                <li class="list-group-item"><span class="badge">{{ $value.Count }}</span><a href="{{ $value.Name | urlize }}">{{ $value.Name }}</a>
+                                {{ $data := .Data }} {{ range $key, $value := .Data.Terms }}
+                                <li class="list-group-item"><a href="{{ $key | urlize }}">{{ $key }}</a>
                                 </li>
                                 {{ end }}
                             </ul>
+
+                            
                         </div>
                     </div>
                 </article>
