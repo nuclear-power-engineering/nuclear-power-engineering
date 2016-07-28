@@ -12,3 +12,4 @@ dataDir = "data_en"
 
 [taxonomies]
 issue = "issue"
+authors = "authors"
