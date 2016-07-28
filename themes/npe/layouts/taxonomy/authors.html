@@ -12,49 +12,42 @@
             </div>
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <article>
-{{$author := .Title}}
-{{ range $.Site.Data.authors}}
-    {{if eq (.term | urlize) ($author | urlize)}} 
-    <div class="panel panel-default card-md">
-        <div class="panel-body">
-            <h2>{{.full_name}}</h2>
-            <p class="plank">
-                <span class="plank-span">
-                    <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-                    {{.regals}}
-                </span>
-            </p>
-            <p class="plank">
-                <span class="plank-span">
-                    <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-                    {{.work}}
-                </span>
-            </p>
-            <p class="plank">
-                <span class="plank-span">
+                    {{$author := .Title}} {{ range $.Site.Data.authors}} {{if eq (.term | urlize) ($author | urlize)}}
+                    <div class="panel panel-default card-md">
+                        <div class="panel-body">
+                            <h2>{{.full_name}}</h2>
+                            <p class="plank">
+                                <span class="plank-span">
+                    <span class="glyphicon glyphicon-education" aria-hidden="true"></span> {{.regals}}
+                                </span>
+                            </p>
+                            <p class="plank">
+                                <span class="plank-span">
+                    <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> {{.work}}
+                                </span>
+                            </p>
+                            <p class="plank">
+                                <span class="plank-span">
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                    <a href="mailto:{{.email}}">{{.email}}</a>
-                </span>
-            </p>
-        </div>
-    </div>
-    {{end}}
-{{end}}
-
-{{ range .Data.Pages.ByDate.Reverse}}
-<div class="panel panel-default card-md">
+                                <a href="mailto:{{.email}}">{{.email}}</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    {{end}} {{end}} {{ range .Data.Pages.ByDate.Reverse}}
+                    <div class="panel panel-default card-md">
                         <div class="panel-body">
                             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                             <p class="plank">
                                 <span class="plank-span">
-                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>                                {{dateFormat "02.01.2006" .Date }}
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{if eq $.Site.LanguageCode "ru-ru"}} {{dateFormat "02.01.2006" .Date }} {{else}} {{dateFormat "1/02/2006" .Date }} {{end}}
                                 </span>
                                 <span class="plank-span">
-                                    <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>                                {{ .Params.issue_name }}</a>
+                                    <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> {{ .Params.issue_name }}</a>
                                 </span>
                                 {{ if .Params.rubric }}
                                 <span class="plank-span">
-                                     <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}"><span class="glyphicon glyphicon-folder-open"></span>                                {{ .Params.rubric_name }}</a>
+                                     <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}"><span class="glyphicon glyphicon-folder-open"></span> {{ .Params.rubric_name }}</a>
                                 </span>
                                 {{ end}}
                             </p>
@@ -79,8 +72,8 @@
                             {{ end}}
                         </div>
                     </div>
-{{end}}
-                    
+                    {{end}}
+
                 </article>
             </div>
         </div>

@@ -14,7 +14,8 @@
                     <a href="{{ .Permalink }}" class="language-link" lang="en"><img class="language-icon" typeof="foaf:Image" src="{{ .Site.BaseURL }}img/en.png" width="16" height="12" alt="English" title="English"> English</a>
                 </li>
                 <li class="ru">
-                    <a href="{{ replace .Permalink "en/" "" }}" class="language-link" lang="ru"><img class="language-icon" typeof="foaf:Image" src="{{ .Site.BaseURL }}img/ru.png" width="16" height="12" alt="Русский" title="Русский"> Русский</a>
+                    {{$link := replace .Permalink "en/" "" }}
+                    <a href="{{ $link }}" class="language-link" lang="ru"><img class="language-icon" typeof="foaf:Image" src="{{ .Site.BaseURL }}img/ru.png" width="16" height="12" alt="Русский" title="Русский"> Русский</a>
                 </li>
                 {{end}}
             </ul>
@@ -29,9 +30,8 @@
                 </div>
                 <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                     <div class="caption">
-                        <h1>Известия вузов. Ядерная энергетика</h1>
-                        <p>Рецензируемый научно-технический журнал.</p>
-                        <p>ISSN: 0204-3327</p>
+                        <h1>{{.Site.Title}}</h1>
+                        <p>{{.Site.Params.description}}</p>
                     </div>
                 </div>
             </div>
@@ -53,15 +53,13 @@
                     <span class="icon-bar"></span>
                 </button>
                 </div>
-
+                {{$page := .}}
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse navbar-">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Главная</a></li>
-                        <li><a href="#">Правила подготовки рукописей</a></li>
-                        <li><a href="#">Архив номеров</a></li>
-                        <li><a href="#">Подписка</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        {{ range .Site.Menus.header }}
+                        <li {{if eq (trim ( printf "%s" (.URL )) "/") (trim (printf "%s" ($page.Permalink | relURL)) "/") }}class="active" {{end}}><a href="{{.URL}}">{{.Name}}</a></li>
+                        {{ end }}
                     </ul>
                 </div>
             </div>
@@ -85,12 +83,21 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse navbar-">
                     <ul class="nav navbar-nav">
-                        <li class="active">Общие сведения</li>
-                        <li><a href="/editors/">Редакционная коллегия</a></li>
-                        <li><a href="/cheef/">Страница главного редактора</a></li>
-                        <li class="active">Авторам</li>
-                        <li><a href="/documents/">Набор документов, сопровождающий публикацию</a></li>
-                        <li><a href="/rules/">Правила оформления статей</a></li>
+                        <li class="active">{{$.Site.Params.journal}}</li>
+                        {{ range .Site.Menus.journal }}
+                        <li><a href="{{.URL}}">{{.Name}}</a></li>
+                        {{ end }}
+
+                        <li class="active">{{$.Site.Params.for_authors}}</li>
+                        {{ range .Site.Menus.for_authors }}
+                        <li><a href="{{.URL}}">{{.Name}}</a></li>
+                        {{ end }}
+
+                        <li class="active">{{$.Site.Params.for_readers}}</li>
+                        {{ range .Site.Menus.for_readers}}
+                        <li><a href="{{.URL}}">{{.Name}}</a></li>
+                        {{ end }}
+                        <li class="active">{{$.Site.Params.search}}</li>
                         <li>
                             {{ if eq .Site.LanguageCode "ru-ru" }}
                             <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://yandex.ru/search/site/','arrow':false,'bg':'transparent','fontsize':15,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск по nuclear-power-engineering.github.io','suggest':true,'target':'_blank','tld':'ru','type':3,'usebigdictionary':true,'searchid':2275955,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':null,'input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}">
@@ -119,7 +126,7 @@
                                         Ya.Site.Form.init()
                                     })
                                 })(window, document, 'yandex_site_callbacks');
-                            </script> {{ end }} {{ if eq .Site.LanguageCode "en-en" }}
+                            </script> {{ end }} {{ if eq .Site.LanguageCode "en-us" }}
                             <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://yandex.ru/search/site/','arrow':false,'bg':'transparent','fontsize':15,'fg':'#000000','language':'ru','logo':'rb','publicname':'nuclear-power-engineering.github.io search','suggest':true,'target':'_blank','tld':'ru','type':3,'usebigdictionary':true,'searchid':2275957,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':null,'input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}">
                                 <form action="https://yandex.ru/search/site/" method="get" target="_blank" accept-charset="utf-8"><input type="hidden" name="searchid" value="2275957" /><input type="hidden" name="l10n" value="ru" /><input type="hidden" name="reqenc" value="" /><input type="search" name="text" value="" /><input type="submit" value="Найти"
                                     /></form>

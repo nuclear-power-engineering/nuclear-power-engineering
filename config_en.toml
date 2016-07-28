@@ -4,12 +4,64 @@ title = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
 contentdir = "content_en"
 publishdir = "public/en"
 dataDir = "data_en"
+copyright = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
 
 [params]
   description = "The peer-reviewed scientific and technology journal. ISSN: 0204-3327"
   author = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
+  archive = "Journal archive"
+  udc = "UDC:"
+  open = "Open PDF file"
+  search = "Search"
+  journal = "About journal"
+  for_authors = "For authors"
+  for_readers = "For readers"
   yandex = "8b50870eae29f1b1"
+  
 
 [taxonomies]
 issue = "issue"
 authors = "authors"
+
+[[menu.header]]
+  name = "Home"
+  url = "/"
+  weight = 0
+
+[[menu.header]]
+  name = "Manuscripts preparation rules"
+  url = "/rules"
+  weight = 1
+
+[[menu.header]]
+  name = "Journal archive"
+  url = "/issue"
+  weight = 2
+
+[[menu.header]]
+  name = "Subscription"
+  url = "/subscription"
+  weight = 3
+
+[[menu.header]]
+  name = "Contacts"
+  url = "/contacts"
+  weight = 4
+
+[[menu.journal]]
+  name = "Contacts"
+  url = "/contacts"
+  weight = 0
+
+[[menu.for_authors]]
+  name = "Manuscripts preparation rules"
+  url = "/rules"
+  weight = 0
+
+[[menu.for_readers]]
+  name = "Journal archive"
+  url = "/issue"
+  weight = 0
+
+
+

@@ -16,13 +16,13 @@
                         <div class="panel-body">
                             <h2>{{ .Title }}</h2>
                             <p class="plank">
-                                <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{dateFormat "02.01.2006" .Date }}
+                                <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{if eq $.Site.LanguageCode "ru-ru"}} {{dateFormat "02.01.2006" .Date }} {{else}} {{dateFormat "1/02/2006" .Date }} {{end}}
                                 <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
                                 {{ .Params.issue_name }}</a>
                             </p>
 
                             <div class="panel-body text-center">
-                                <a class="btn btn-primary btn-lg btn-mat" href="{{ .Site.BaseURL }}{{ .Params.file }}" target="_blank" role="button">Открыть PDF файл</a>
+                                <a class="btn btn-primary btn-lg btn-mat" href="{{ .Site.BaseURL }}{{ .Params.file }}" target="_blank" role="button">{{$.Site.Params.open}}</a>
                             </div>
                         </div>
                     </div>

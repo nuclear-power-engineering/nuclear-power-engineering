@@ -1,6 +1,6 @@
 <aside>
     <ul class="list-group aside submenu card-md panel-default">
-        <li class="list-group-item aside aside-item active">Поиск</li>
+        <li class="list-group-item aside aside-item active">{{$.Site.Params.search}}</li>
         <li class="list-group-item aside aside-item">
             {{ if eq .Site.LanguageCode "ru-ru" }}
             <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://yandex.ru/search/site/','arrow':false,'bg':'transparent','fontsize':15,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск по nuclear-power-engineering.github.io','suggest':true,'target':'_blank','tld':'ru','type':3,'usebigdictionary':true,'searchid':2275955,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':null,'input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}">
@@ -61,27 +61,23 @@
     </ul>
 
     <ul class="list-group aside submenu card-md panel-default">
-        <li class="list-group-item aside aside-item active">Общие сведения</li>
-        <li class="list-group-item aside aside-item"><a href="/editors/">Редакционная коллегия</a></li>
-        <li class="list-group-item aside aside-item"><a href="/cheef/">Страница главного редактора</a></li>
-        <li class="list-group-item aside aside-item"><a href="/ethics/">Этика публикаций</a></li>
-        <li class="list-group-item aside aside-item"><a href="/reviewing/">Рецензирование</a></li>
-        <li class="list-group-item aside aside-item"><a href="/contacts/">Контакты</a></li>
+        <li class="list-group-item aside aside-item active">{{$.Site.Params.journal}}</li>
+        {{ range .Site.Menus.journal }}
+        <li class="list-group-item aside aside-item"><a href="{{.URL}}">{{.Name}}</a></li>
+        {{ end }}
     </ul>
 
     <ul class="list-group submenu card-md panel-default aside">
-        <li class="list-group-item active aside aside-item">Авторам</li>
-        <li class="list-group-item aside aside-item"><a href="/documents/">Набор документов, сопровождающий публикацию</a></li>
-        <li class="list-group-item aside aside-item"><a href="/rules/">Правила оформления статей</a></li>
-        <li class="list-group-item aside aside-item"><a href="/guide-abstract/">Рекомендации по подготовке аннотаций (рефератов)</a></li>
-        <li class="list-group-item aside aside-item"><a href="/guide-references/">Рекомендации по подготовке ссылок в латинице</a></li>
+        <li class="list-group-item active aside aside-item">{{$.Site.Params.for_authors}}</li>
+        {{ range .Site.Menus.for_authors }}
+        <li class="list-group-item aside aside-item"><a href="{{.URL}}">{{.Name}}</a></li>
+        {{ end }}
     </ul>
 
     <ul class="list-group submenu card-md panel-default aside">
-        <li class="list-group-item active aside aside-item">Читателям</li>
-        <li class="list-group-item aside aside-item"><a href="/lastest/">Текущий номер журнала</a></li>
-        <li class="list-group-item aside aside-item"><a href="/issue/">Архив номеров журнала</a></li>
-        <li class="list-group-item aside aside-item"><a href="/authors/">Наши авторы</a></li>
-        <li class="list-group-item aside aside-item"><a href="/subscription/">Подписка</a></li>
+        <li class="list-group-item active aside aside-item">{{$.Site.Params.for_readers}}</li>
+        {{ range .Site.Menus.for_readers }}
+        <li class="list-group-item aside aside-item"><a href="{{.URL}}">{{.Name}}</a></li>
+        {{ end }}
     </ul>
 </aside>

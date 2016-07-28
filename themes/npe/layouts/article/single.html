@@ -17,14 +17,14 @@
                             <h2>{{ .Title }}</h2>
                             <p class="plank">
                                 <span class="plank-span">
-                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>                                {{dateFormat "02.01.2006" .Date }}
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{if eq $.Site.LanguageCode "ru-ru"}} {{dateFormat "02.01.2006" .Date }} {{else}} {{dateFormat "1/02/2006" .Date }} {{end}}
                                 </span>
                                 <span class="plank-span">
-                                    <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>                                {{ .Params.issue_name }}</a>
+                                    <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> {{ .Params.issue_name }}</a>
                                 </span>
                                 {{ if .Params.rubric }}
                                 <span class="plank-span">
-                                     <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}"><span class="glyphicon glyphicon-folder-open"></span>                                {{ .Params.rubric_name }}</a>
+                                     <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}"><span class="glyphicon glyphicon-folder-open"></span> {{ .Params.rubric_name }}</a>
                                 </span>
                                 {{ end}}
                             </p>
@@ -46,7 +46,7 @@
                             </p>
 
                             <div class="text-right">
-                                <h4>УДК: {{.Params.udc }}</h4>
+                                <h4>{{$.Site.Params.udc}} {{.Params.udc }}</h4>
                             </div>
 
                             <p>
@@ -67,7 +67,7 @@
                             </p>
 
                             <div class="panel-body text-center">
-                                <a class="btn btn-primary btn-lg btn-mat" href="{{ .Site.BaseURL }}{{ .Params.file }}" target="_blank" role="button">Открыть PDF файл</a>
+                                <a class="btn btn-primary btn-lg btn-mat" href="{{ .Site.BaseURL }}{{ .Params.file }}" target="_blank" role="button">{{$.Site.Params.open}}</a>
                             </div>
                         </div>
                     </div>

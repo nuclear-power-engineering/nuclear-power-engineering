@@ -1,12 +1,61 @@
-baseurl = "http://nuclear-power-engineering.github.io/"
+baseurl = "http://nuclear-power-engineering.github.io"
 languageCode = "ru-ru"
 title = "Известия вузов. Ядерная энергетика"
+copyright = "Журнал «Известия вузов. Ядерная энергетика»"
 
 [params]
   description = "Рецензируемый научно-технический журнал. ISSN: 0204-3327"
   author = "Журнал «Известия вузов. Ядерная энергетика»"
+  archive = "Архив номеров журнала"
+  udc = "УДК:"
+  open = "Открыть PDF файл"
+  search = "Поиск"
+  journal = "О журнале"
+  for_authors = "Авторам"
+  for_readers = "Читателям"
+
   yandex = "8b50870eae29f1b1"
 
 [taxonomies]
-issue = "issue"
-authors = "authors"
+  issue = "issue"
+  authors = "authors"
+
+[[menu.header]]
+  name = "Главная"
+  url = "/"
+  weight = 0
+
+[[menu.header]]
+  name = "Правила оформления статей"
+  url = "/rules"
+  weight = 1
+
+[[menu.header]]
+  name = "Архив номеров журнала"
+  url = "/issue"
+  weight = 2
+
+[[menu.header]]
+  name = "Подписка"
+  url = "/subscription"
+  weight = 3
+
+[[menu.header]]
+  name = "Контакты"
+  url = "/contacts"
+  weight = 4
+
+[[menu.journal]]
+  name = "Контакты"
+  url = "/contacts"
+  weight = 0
+
+[[menu.for_authors]]
+  name = "Правила оформления статей"
+  url = "/rules"
+  weight = 0
+
+[[menu.for_readers]]
+  name = "Архив номеров журнала"
+  url = "/issue"
+  weight = 0
