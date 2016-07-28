@@ -1,4 +1,4 @@
-baseurl = "http://nuclear-power-engineering.github.io"
+baseurl = "http://nuclear-power-engineering.github.io/"
 languageCode = "ru-ru"
 title = "Известия вузов. Ядерная энергетика"
 copyright = "Журнал «Известия вузов. Ядерная энергетика»"
