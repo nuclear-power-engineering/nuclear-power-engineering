@@ -16,6 +16,8 @@ copyright = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
   journal = "About journal"
   for_authors = "For authors"
   for_readers = "For readers"
+  our_authors = "Our authors"
+  to_top = "Back to top"
   yandex = "8b50870eae29f1b1"
   
 
@@ -49,19 +51,69 @@ authors = "authors"
   weight = 4
 
 [[menu.journal]]
+  name = "Editorial board"
+  url = "/editors"
+  weight = 0
+
+[[menu.journal]]
+  name = "Editor-in Chief's Page"
+  url = "/chief"
+  weight = 1
+
+[[menu.journal]]
+  name = "Publication ethics"
+  url = "/ethics"
+  weight = 2
+
+[[menu.journal]]
+  name = "Reviewing"
+  url = "/reviewing"
+  weight = 3
+
+[[menu.journal]]
   name = "Contacts"
   url = "/contacts"
+  weight = 4
+
+[[menu.for_authors]]
+  name = "Set of documents that accompanies the publication"
+  url = "/docs"
   weight = 0
 
 [[menu.for_authors]]
   name = "Manuscripts preparation rules"
   url = "/rules"
+  weight = 1
+
+[[menu.for_authors]]
+  name = "Guidelines for abstract writing"
+  url = "/abstracts-guide"
+  weight = 2
+
+[[menu.for_authors]]
+  name = "Guidelines for Romanization of References"
+  url = "/latin-guide"
+  weight = 3
+
+[[menu.for_readers]]
+  name = "The lastest issue"
+  url = "/issue/2016-02"
   weight = 0
 
 [[menu.for_readers]]
   name = "Journal archive"
   url = "/issue"
-  weight = 0
+  weight = 1
+
+[[menu.for_readers]]
+  name = "Our authors"
+  url = "/authors"
+  weight = 2 
+
+[[menu.for_readers]]
+  name = "Subscription"
+  url = "/subscription"
+  weight = 3 
 
 
 
