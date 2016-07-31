@@ -4,7 +4,7 @@
             <ul class="list-inline">
                 {{if eq .Site.LanguageCode "ru-ru"}}
                 <li class="en">
-                    <a href="{{ .Site.BaseURL }}en{{.URL}}" class="language-link" lang="en"><img class="language-icon" typeof="foaf:Image" src="{{ .Site.BaseURL }}img/en.png" width="16" height="12" alt="English" title="English"> English</a>
+                    <a href="{{ .Site.BaseURL }}en{{.Permalink | relURL }}" class="language-link" lang="en"><img class="language-icon" typeof="foaf:Image" src="{{ .Site.BaseURL }}img/en.png" width="16" height="12" alt="English" title="English"> English</a>
                 </li>
                 <li class="ru">
                     <a href="{{ .Permalink }}" class="language-link" lang="ru"><img class="language-icon" typeof="foaf:Image" src="{{ .Site.BaseURL }}img/ru.png" width="16" height="12" alt="Русский" title="Русский"> Русский</a>
