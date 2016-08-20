@@ -26,12 +26,14 @@
                     <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> {{.work}}
                                 </span>
                             </p>
+                            {{ if .email}}
                             <p class="plank">
                                 <span class="plank-span">
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                                 <a href="mailto:{{.email}}">{{.email}}</a>
                                 </span>
                             </p>
+                            {{ end }}
                         </div>
                     </div>
                     {{end}} {{end}} {{ range .Data.Pages.ByDate.Reverse}}
