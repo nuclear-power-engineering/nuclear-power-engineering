@@ -12,14 +12,6 @@
             </div>
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <article>
-
-                    <div class="panel panel-default card-md">
-                        <div class="panel-body">
-                            {{ $rubric := .Title}}
-                            <h2>{{$rubric}}</h2>
-                            </div>
-                    </div>
-
                     {{ range .Data.Pages.ByWeight}}
                     <div class="panel panel-default card-md">
                         <div class="panel-body">
