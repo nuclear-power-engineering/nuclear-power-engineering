@@ -13,14 +13,17 @@
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <article>
 
+                    <div class="panel panel-default card-md">
+                        <div class="panel-body">
+                            {{ $rubric := .Title}}
+                            <h2>{{$rubric}}</h2>
+                            </div>
+                    </div>
+
                     {{ range .Data.Pages.ByWeight}}
                     <div class="panel panel-default card-md">
                         <div class="panel-body">
-                            {{ if .Params.number }}
-                            <h2><a href="{{ .Permalink }}">{{.Params.number}}. {{ .Title }}</a></h2>
-                            {{ else }}
                             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                            {{ end }}
                             <p class="plank">
                                 <span class="plank-span">
                                     <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{if eq $.Site.LanguageCode "ru-ru"}} {{dateFormat "02.01.2006" .Date }} {{else}} {{dateFormat "1/02/2006" .Date }} {{end}}

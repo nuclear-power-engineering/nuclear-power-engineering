@@ -21,6 +21,8 @@ copyright = "Журнал «Известия вузов. Ядерная энер
 [taxonomies]
   issue = "issue"
   authors = "authors"
+  tags = "tags"
+  rubric = "rubric"
 
 [[menu.header]]
   name = "Главная"
