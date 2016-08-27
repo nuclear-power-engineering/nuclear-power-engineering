@@ -24,6 +24,8 @@ copyright = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
 [taxonomies]
 issue = "issue"
 authors = "authors"
+tags = "tags"
+rubric = "rubric"
 
 [[menu.header]]
   name = "Home"
