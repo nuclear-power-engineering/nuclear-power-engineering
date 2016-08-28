@@ -17,6 +17,7 @@ copyright = "Журнал «Известия вузов. Ядерная энер
   to_top = "К началу"
 
   yandex = "8b50870eae29f1b1"
+  google = "UA-71522545-2"
 
 [taxonomies]
   issue = "issue"
