@@ -100,7 +100,7 @@ rubric = "rubric"
 
 [[menu.for_readers]]
   name = "The lastest issue"
-  url = "/issue/2016-03"
+  url = "/issue/2016-04"
   weight = 0
 
 [[menu.for_readers]]
