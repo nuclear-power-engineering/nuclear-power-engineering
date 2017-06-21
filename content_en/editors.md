@@ -7,66 +7,64 @@ title = "Editorial board"
 
 ### Editor in chief
 
-YA Kazansky , Professor , Obninsk Institute of Nuclear Energy MEPhI
+Y.A. Kazansky , Professor , Obninsk Institute of Nuclear Energy MEPhI
 
 ### Associate Editors
 
-NL Balling , Doctor of Technical Sciences , Professor, Obninsk Institute of Nuclear Energy MEPhI
+N.L. Sal’nikov , Doctor of Technical Sciences , Professor, Obninsk Institute of Nuclear Energy MEPhI
 
-ES Matusevich , Professor , Obninsk Institute of Nuclear Energy MEPhI
+E.S. Matusevich , Professor , Obninsk Institute of Nuclear Energy MEPhI
 
 ### Responsible editorial secretary
 
-Mironovich V.L., Assistant Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
+V.L. Mironovich, Assistant Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
 
 ### Editorial board
 
-AV Beznosov , Professor, Nizhny Novgorod State Technical University
-
-Y. Volkov, professor, Obninsk Institute of Nuclear Energy MEPhI
-
-SM Dmitriev, Ph.D., Professor, Nizhny Novgorod State Technical University
-
-AV Zrodnikov , Professor , SSC RF Institute of Physics and Power Engineering , Obninsk
-
-YA Korovin , Professor , Obninsk Institute of Nuclear Energy MEPhI
-
-II Roof, Dr., gl.nauchny employee Scientific and Production Association "Typhoon" , Obninsk
-
-VD Kuznetsov, Ph.D., Professor, Moscow Power Engineering Institute (Technical University )
-
-II Loschakov , Professor , St. Petersburg State Technical University
-
-VM Murogov , Professor, Obninsk Institute of Nuclear Energy MEPhI
-
-BI Nigmatulin , Professor, Institute of Natural Monopolies , Moscow
-
-VA Ostreikovskaya , Professor, Surgut State University , Surgut
-
-VM Poplawski , Ph.D., Professor , SSC RF Institute of Physics and Power Engineering , Obninsk
-
-M. Salvatores , Director , Research Center of Cadarache , France
-
-MN Strikhanov , Professor , National Research Nuclear University " MiFi "
-
-AI Trofimov, Ph.D., Professor, Obninsk Institute of Nuclear Energy MEPhI
-
-VL Shablov, Prof. , Obninsk Institute of Nuclear Energy MEPhI
-
-AN Shmelev, Professor, National Research Nuclear University " MiFi "
-
-SE Shekleina , Professor, Ural State Technical University - Ural Polytechnic Institute
-
-BI Yatsalo , Professor, Obninsk Institute of Nuclear Energy MEPhI
+A.V. Beznosov, Professor, Nizhegorodskiy State Technical University
 
 F. D’Auria, Professor, University of Pisa, Pisa, Italy
 
-I. Pioro, Professor, University of Ontario Institute of Technology, Oshawa, Ontario, Canada
-
-M. Saito, Professor, Tokyo Institute of Technology, Tokyo, Japan
+S.M. Dmitriev, Professor, Nizhegorodskiy State Technical University
 
 V.V. Kharchenko, Corresponding member of NUAS, Professor, Institute for Problems of Strength, Kiev, Ukraine
 
+Yu.A. Korovin, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
+
+I.I. Kryshev, Professor, Head Researcher, «Typhoon» SPA, Obninsk
+
+I.I. Loschakov, Professor, St.Petersburg State Technical University
+
+V.M. Murogov, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
+
+B.I. Nigmatullin, Professor, Institute of Natural Monopolies Research
+
+V.A. Ostreikovskiy, Professor, Surgut State University
+
+I.L. Pioro, Professor, University of Ontario Institute of Technology, Oshawa, Ontario, Canada
+
+V.I. Rachkov, Corresponding Member of RAS, Professor, Institute for Physics and Power Engineering, Obninsk
+
+M. Saito, Professor, Tokyo Institute of Technology, Tokyo, Japan
+
+M. Salvatores, General Manager of the Department of Scientific Research Center in Kadarash, France
+
+V.L. Shablov, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
+
+S.Ye. Scheklein, Professor, Ural Federal University – Ural Polwer Engineering Institute
+
+A.N. Shmelyov, Professor, National Research Nuclear University «MEPhI»
+
+V.P.Smirnov, Professor, SOSNY Research and Development Company, Dimitrovgrad
+
+M.N. Strikhanov, Professor, National Research Nuclear University «MEPhI»
+
+A.I. Trofimov, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
+
+A.V. Zrodnikov, Professor, All-Russian Research Insitute for Nuclear Power Plant Operation
+
+B.I. Yatsalo, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
+
 ### Managing Editor
 
-ZI Snykova
+Z.I. Snykova

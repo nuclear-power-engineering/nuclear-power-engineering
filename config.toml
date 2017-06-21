@@ -97,7 +97,7 @@ copyright = "Журнал «Известия вузов. Ядерная энер
 
 [[menu.for_readers]]
   name = "Текущий номер"
-  url = "/issue/2017-01"
+  url = "/issue/2017-02"
   weight = 0
 
 [[menu.for_readers]]
