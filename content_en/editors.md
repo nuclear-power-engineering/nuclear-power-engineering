@@ -61,7 +61,7 @@ M.N. Strikhanov, Professor, National Research Nuclear University «MEPhI»
 
 A.I. Trofimov, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
 
-A.V. Zrodnikov, Professor, All-Russian Research Insitute for Nuclear Power Plant Operation
+A.V. Zrodnikov, Professor, All-Russian Research Institute for Nuclear Power Plant Operation
 
 B.I. Yatsalo, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
 
