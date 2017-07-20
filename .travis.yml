@@ -8,6 +8,6 @@ before_install:
 - docker images
 
 script:
-- docker run --rm --name hs -v "($pwd):/data" djbelyak/hugo-selectel:25.1 hugo --theme npe --config=config.toml --destination=public
-- docker run --rm --name hs -v "($pwd):/data" djbelyak/hugo-selectel:25.1 hugo --theme npe --config=config_en.toml --destination=public/en
-- docker run --rm --name hs -v "($pwd):/data" djbelyak/hugo-selectel:25.1 supload.sh -u ${SELECTEL_USER} -k ${SELECTEL_PASS} ${SELECTEL_BUCKET} /data
+- docker run --rm --name hs -v `pwd`:/data djbelyak/hugo-selectel:25.1 hugo --theme npe --config=config.toml --destination=public
+- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:25.1 hugo --theme npe --config=config_en.toml --destination=public/en
+- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:25.1 supload.sh -u ${SELECTEL_USER} -k ${SELECTEL_PASS} ${SELECTEL_BUCKET} /data
