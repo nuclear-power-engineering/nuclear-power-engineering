@@ -31,92 +31,89 @@ rubric = "rubric"
 [[menu.header]]
   name = "Home"
   url = "/"
-  weight = 0
-
-[[menu.header]]
-  name = "Manuscripts preparation rules"
-  url = "/rules"
   weight = 1
 
 [[menu.header]]
-  name = "Journal archive"
-  url = "/issue"
+  name = "Manuscripts preparation rules"
+  url = "/rules/"
   weight = 2
 
 [[menu.header]]
-  name = "Subscription"
-  url = "/subscription"
+  name = "Journal archive"
+  url = "/issue/"
   weight = 3
 
 [[menu.header]]
-  name = "Contacts"
-  url = "/contacts"
+  name = "Subscription"
+  url = "/subscription/"
   weight = 4
+
+[[menu.header]]
+  name = "Contacts"
+  url = "/contacts/"
+  weight = 5
 
 [[menu.journal]]
   name = "Editorial board"
-  url = "/editors"
-  weight = 0
+  url = "/editors/"
+  weight = 1
 
 [[menu.journal]]
   name = "Editor-in Chief's Page"
-  url = "/chief"
-  weight = 1
+  url = "/chief/"
+  weight = 2
 
 [[menu.journal]]
   name = "Publication ethics"
-  url = "/ethics"
-  weight = 2
+  url = "/ethics/"
+  weight = 3
 
 [[menu.journal]]
   name = "Reviewing"
-  url = "/reviewing"
-  weight = 3
+  url = "/reviewing/"
+  weight = 4
 
 [[menu.journal]]
   name = "Contacts"
-  url = "/contacts"
-  weight = 4
+  url = "/contacts/"
+  weight = 5
 
 [[menu.for_authors]]
   name = "Set of documents that accompanies the publication"
-  url = "/docs"
-  weight = 0
+  url = "/docs/"
+  weight = 1
 
 [[menu.for_authors]]
   name = "Manuscripts preparation rules"
-  url = "/rules"
-  weight = 1
-
-[[menu.for_authors]]
-  name = "Guidelines for abstract writing"
-  url = "/abstracts-guide"
+  url = "/rules/"
   weight = 2
 
 [[menu.for_authors]]
-  name = "Guidelines for Romanization of References"
-  url = "/latin-guide"
+  name = "Guidelines for abstract writing"
+  url = "/abstracts-guide/"
   weight = 3
+
+[[menu.for_authors]]
+  name = "Guidelines for Romanization of References"
+  url = "/latin-guide/"
+  weight = 4
 
 [[menu.for_readers]]
   name = "The lastest issue"
-  url = "/issue/2017-02"
-  weight = 0
-
-[[menu.for_readers]]
-  name = "Journal archive"
-  url = "/issue"
+  url = "/issue/2017-02/"
   weight = 1
 
 [[menu.for_readers]]
+  name = "Journal archive"
+  url = "/issue/"
+  weight = 2
+
+[[menu.for_readers]]
   name = "Our authors"
-  url = "/authors"
-  weight = 2 
+  url = "/authors/"
+  weight = 3 
 
 [[menu.for_readers]]
   name = "Subscription"
-  url = "/subscription"
-  weight = 3 
-
-
-
+  url = "/subscription/"
+  weight = 4 

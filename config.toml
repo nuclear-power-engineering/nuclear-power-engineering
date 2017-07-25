@@ -28,89 +28,89 @@ copyright = "Журнал «Известия вузов. Ядерная энер
 [[menu.header]]
   name = "Главная"
   url = "/"
-  weight = 0
-
-[[menu.header]]
-  name = "Правила оформления статей"
-  url = "/rules"
   weight = 1
 
 [[menu.header]]
-  name = "Архив номеров журнала"
-  url = "/issue"
+  name = "Правила оформления статей"
+  url = "/rules/"
   weight = 2
 
 [[menu.header]]
-  name = "Подписка"
-  url = "/subscription"
+  name = "Архив номеров журнала"
+  url = "/issue/"
   weight = 3
 
 [[menu.header]]
-  name = "Контакты"
-  url = "/contacts"
+  name = "Подписка"
+  url = "/subscription/"
   weight = 4
+
+[[menu.header]]
+  name = "Контакты"
+  url = "/contacts/"
+  weight = 5
 
 [[menu.journal]]
   name = "Редакционная коллегия"
-  url = "/editors"
-  weight = 0
+  url = "/editors/"
+  weight = 1
 
 [[menu.journal]]
   name = "Страница главного редактора"
-  url = "/chief"
-  weight = 1
+  url = "/chief/"
+  weight = 2
 
 [[menu.journal]]
   name = "Этика публикаций"
-  url = "/ethics"
-  weight = 2
+  url = "/ethics/"
+  weight = 3
 
 [[menu.journal]]
   name = "Рецензирование"
-  url = "/reviewing"
-  weight = 3
+  url = "/reviewing/"
+  weight = 4
 
 [[menu.journal]]
   name = "Контакты"
-  url = "/contacts"
-  weight = 4
+  url = "/contacts/"
+  weight = 5
 
 [[menu.for_authors]]
   name = "Набор документов, сопровождающий публикацию"
-  url = "/docs"
-  weight = 0
+  url = "/docs/"
+  weight = 1
 
 [[menu.for_authors]]
   name = "Правила оформления статей"
-  url = "/rules"
-  weight = 1
-
-[[menu.for_authors]]
-  name = "Рекомендации по подготовке аннотаций (рефератов)"
-  url = "/abstracts-guide"
+  url = "/rules/"
   weight = 2
 
 [[menu.for_authors]]
-  name = "Рекомендации по подготовке ссылок в латинице"
-  url = "/latin-guide"
+  name = "Рекомендации по подготовке аннотаций (рефератов)"
+  url = "/abstracts-guide/"
   weight = 3
+
+[[menu.for_authors]]
+  name = "Рекомендации по подготовке ссылок в латинице"
+  url = "/latin-guide/"
+  weight = 4
 
 [[menu.for_readers]]
   name = "Текущий номер"
-  url = "/issue/2017-02"
-  weight = 0
-
-[[menu.for_readers]]
-  name = "Архив номеров журнала"
-  url = "/issue"
+  url = "/issue/2017-02/"
   weight = 1
 
 [[menu.for_readers]]
+  name = "Архив номеров журнала"
+  url = "/issue/"
+  weight = 2
+
+[[menu.for_readers]]
   name = "Наши авторы"
-  url = "/authors"
-  weight = 2 
+  url = "/authors/"
+  weight = 3 
 
 [[menu.for_readers]]
   name = "Подписка"
-  url = "/subscription"
-  weight = 3 
+  url = "/subscription/"
+  weight = 4 
