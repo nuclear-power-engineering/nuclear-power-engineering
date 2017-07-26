@@ -19,7 +19,7 @@
                             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                             <p class="plank">
                                 <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{if eq $.Site.LanguageCode "ru-ru"}} {{dateFormat "02.01.2006" .Date }} {{else}} {{dateFormat "1/02/2006" .Date }} {{end}}
-                                <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+                                <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}/"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
                                 {{ .Params.issue_name }}</a>
                             </p>
                         </div>
