@@ -19,7 +19,7 @@
                             <ul class="list-group">
 
                                 {{ $data := .Data }} {{ range $key, $value := .Data.Terms.Alphabetical.Reverse }}
-                                <li class="list-group-item"><span class="badge">{{ $value.Count }}</span><a href="{{ $value.Name | urlize }}">{{ $value.Name }}</a>
+                                <li class="list-group-item"><span class="badge">{{ $value.Count }}</span><a href="{{ $value.Name | urlize }}/">{{ $value.Name }}</a>
                                 </li>
                                 {{ end }}
                             </ul>
