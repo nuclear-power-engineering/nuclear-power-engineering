@@ -20,11 +20,11 @@
                                     <span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{if eq $.Site.LanguageCode "ru-ru"}} {{dateFormat "02.01.2006" .Date }} {{else}} {{dateFormat "1/02/2006" .Date }} {{end}}
                                 </span>
                                 <span class="plank-span">
-                                    <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> {{ .Params.issue_name }}</a>
+                                    <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}/"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> {{ .Params.issue_name }}</a>
                                 </span>
                                 {{ if .Params.rubric }}
                                 <span class="plank-span">
-                                     <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}"><span class="glyphicon glyphicon-folder-open"></span> {{ .Params.rubric_name }}</a>
+                                     <a href="{{ .Site.BaseURL }}rubric/{{ .Params.rubric}}/"><span class="glyphicon glyphicon-folder-open"></span> {{ .Params.rubric_name }}</a>
                                 </span>
                                 {{ end}}
                             </p>
@@ -38,7 +38,7 @@
                                     {{ $author := .}}
                                     {{ range $key, $value := $.Site.Data.authors}}
                                         {{if eq $author $key}}
-                                            <a href="{{ $base }}authors/{{ $author | urlize }}">{{ replace $value.name " " "\u00A0"}}</a>
+                                            <a href="{{ $base }}authors/{{ $author | urlize }}/">{{ replace $value.name " " "\u00A0"}}</a>
                                         {{ end }}
                                     {{end}}
                                     
@@ -60,7 +60,7 @@
 
                                 <span class="plank-span">
                                     {{ range .Params.tags }}
-                                    <a href="{{ $base }}tags/{{ . | urlize }}">{{ replace . " " "\u00A0" }}</a>
+                                    <a href="{{ $base }}tags/{{ . | urlize }}/">{{ replace . " " "\u00A0" }}</a>
                                     {{ end }}
                                 </span>
 
