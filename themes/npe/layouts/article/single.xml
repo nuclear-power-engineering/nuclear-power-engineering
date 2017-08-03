@@ -32,12 +32,8 @@
 			</journal_issue>
 			<journal_article publication_type="full_text" metadata_distribution_opts="any">
 				<titles>
-					<title>
-						{{ .Params.title }}
-					</title>
-					<original_language_title>
-						{{ .Params.original_title }}
-					</original_language_title>
+					<title>{{ .Params.title }}</title>
+					<original_language_title>{{ .Params.original_title }}</original_language_title>
 				</titles>				
 				<contributors>	
 					{{$.Scratch.Add "seq" "first" }}{{ range .Params.authors }} {{ $author := .}}{{ range $key, $value := $.Site.Data.authors}}{{if eq $author $key}}<person_name contributor_role="author" sequence="{{$.Scratch.Get "seq"}}">{{$.Scratch.Set "seq" "additional"}}{{$arr := split $value.full_name " " }}{{$given := last 2 $arr}}{{$sur := first 1 $arr}}

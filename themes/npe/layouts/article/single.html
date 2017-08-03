@@ -45,6 +45,13 @@
                                 </span> {{ end }}
                             </p>
 
+                            {{if .Params.doi}}<p class="plank">
+                                <span class="plank-span">
+                                    <img src="{{ .Site.BaseURL }}img/doi.png"/ alt="DOI:">
+                                    <a href="{{.Params.doi}}">{{.Params.doi}}</a>
+                                </span>
+                            </p>{{end}}
+
                             <div class="text-right">
                                 <h4>{{$.Site.Params.udc}} {{.Params.udc }}</h4>
                             </div>
