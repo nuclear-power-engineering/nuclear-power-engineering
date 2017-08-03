@@ -1,7 +1,7 @@
 <doi_batch xmlns="http://www.crossref.org/schema/4.3.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.3.7" xsi:schemaLocation="http://www.crossref.org/schema/4.3.7 http://www.crossref.org/schema/deposit/crossref4.3.7.xsd">
 	<head>
-		<doi_batch_id>NPE_{{.Page.Lastmod.Format "20060102150405"}}</doi_batch_id>
-		<timestamp>{{.Page.Lastmod.Format "20060102150405"}}</timestamp>
+		<doi_batch_id>NPE_{{ now.Unix }}</doi_batch_id>
+		<timestamp>{{ now.Unix }}</timestamp>
 		<depositor>
 			<depositor_name>mephi</depositor_name>
 			<email_address>oapanin@mephi.ru</email_address>
@@ -13,8 +13,7 @@
 			<journal_metadata>
 				<full_title>Izvestiya Wysshikh Uchebnykh Zawedeniy, Yadernaya Energetika</full_title>
 				<abbrev_title>YadEn</abbrev_title>
-				<issn media_type="electronic">20747136</issn>
-				<issn media_type="print">20747128</issn>
+				<issn media_type="print">02043327</issn>
 			</journal_metadata>
 			<journal_issue>
 				<publication_date media_type="print">		
