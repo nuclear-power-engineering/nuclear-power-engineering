@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <doi_batch xmlns="http://www.crossref.org/schema/4.3.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.3.7" xsi:schemaLocation="http://www.crossref.org/schema/4.3.7 http://www.crossref.org/schema/deposit/crossref4.3.7.xsd">
 	<head>
-		<doi_batch_id>NPE_1501588495</doi_batch_id>
-		<timestamp>1501588495</timestamp>
+		<doi_batch_id>NPE_{{.Page.Lastmod.Format "20060102150405"}}</doi_batch_id>
+		<timestamp>{{.Page.Lastmod.Format "20060102150405"}}</timestamp>
 		<depositor>
 			<depositor_name>mephi</depositor_name>
 			<email_address>oapanin@mephi.ru</email_address>
@@ -46,7 +45,7 @@
 						<given_name>{{delimit $given " "}}</given_name>
 						<surname>{{delimit $sur ""}}</surname>
 						<affiliation>{{$value.work}}</affiliation>
-						<ORCID>http://orcid.org/0000-0001-7868-165X</ORCID>
+						{{if $value.ORCID}}<ORCID>{{$value.ORCID}}</ORCID>{{end}}
 					</person_name>
 					{{ end }}{{end}}{{end}}
 				</contributors>
