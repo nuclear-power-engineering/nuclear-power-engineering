@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.3.7" xsi:schemaLocation="http://www.crossref.org/schema/4.3.7 http://www.crossref.org/schema/deposit/crossref4.3.7.xsd">
+	<head>
+		<doi_batch_id>NPE_1501588495</doi_batch_id>
+		<timestamp>1501588495</timestamp>
+		<depositor>
+			<depositor_name>mephi</depositor_name>
+			<email_address>oapanin@mephi.ru</email_address>
+		</depositor>
+		<registrant>National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)</registrant>
+	</head>
+	<body>
+		<journal>
+			<journal_metadata>
+				<full_title>Izvestiya Wysshikh Uchebnykh Zawedeniy, Yadernaya Energetika</full_title>
+				<abbrev_title>YadEn</abbrev_title>
+				<issn media_type="electronic">20747136</issn>
+				<issn media_type="print">20747128</issn>
+			</journal_metadata>
+			<journal_issue>
+				<publication_date media_type="print">		
+					<month>{{dateFormat "1" .Date}}</month>
+					<year>{{dateFormat "2006" .Date}}</year>
+				</publication_date>
+					<publication_date media_type="online">
+					<month>{{dateFormat "1" .Date}}</month>
+					<day>{{dateFormat "02" .Date }}</day>
+					<year>{{dateFormat "2006" .Date}}</year>
+				</publication_date>
+				<journal_volume>
+					<volume>{{dateFormat "2006" .Date}}</volume>
+				</journal_volume>
+				<issue>{{ .Params.issue_id }}</issue>	
+			</journal_issue>
+			<journal_article publication_type="full_text" metadata_distribution_opts="any">
+				<titles>
+					<title>
+						{{ .Params.title }}
+					</title>
+					<original_language_title>
+						{{ .Params.original_title }}
+					</original_language_title>
+				</titles>				
+				<contributors>	
+					{{$.Scratch.Add "seq" "first" }}{{ range .Params.authors }} {{ $author := .}}{{ range $key, $value := $.Site.Data.authors}}{{if eq $author $key}}<person_name contributor_role="author" sequence="{{$.Scratch.Get "seq"}}">{{$.Scratch.Set "seq" "additional"}}{{$arr := split $value.full_name " " }}{{$given := last 2 $arr}}{{$sur := first 1 $arr}}
+						<given_name>{{delimit $given " "}}</given_name>
+						<surname>{{delimit $sur ""}}</surname>
+						<affiliation>{{$value.work}}</affiliation>
+						<ORCID>http://orcid.org/0000-0001-7868-165X</ORCID>
+					</person_name>
+					{{ end }}{{end}}{{end}}
+				</contributors>
+				<publication_date media_type="print">
+					<month>{{dateFormat "1" .Date}}</month>
+					<year>{{dateFormat "2006" .Date}}</year>
+				</publication_date>
+				<publication_date media_type="online">
+					<month>{{dateFormat "1" .Date}}</month>
+					<day>{{dateFormat "02" .Date }}</day>
+					<year>{{dateFormat "2006" .Date}}</year>
+				</publication_date>
+				<pages>
+					<first_page>{{ .Params.first_page }}</first_page>
+					<last_page>{{ .Params.last_page }}</last_page>
+				</pages>
+				<doi_data>
+					<doi>10.26583/npe.{{dateFormat "2006" .Date}}.{{.Params.issue_id}}.{{ .Params.number }}</doi>
+					<resource>{{ .Permalink }}</resource>
+				</doi_data>
+			</journal_article>
+		</journal>
+	</body>
+</doi_batch>

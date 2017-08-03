@@ -117,3 +117,10 @@ rubric = "rubric"
   name = "Subscription"
   url = "/subscription/"
   weight = 4 
+
+[outputFormats.DOI]
+mediaType = "application/xml"
+baseName = "doi"
+isPlainText = false
+isHTML = false
+

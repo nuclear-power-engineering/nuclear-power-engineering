@@ -9,7 +9,9 @@
     <meta name="author" content="{{ .Site.Params.author }}">
     <meta name="yandex-verification" content="{{ .Site.Params.yandex }}" />
     <meta name="google-site-verification" content="foOFemX6Xu-x7wv1FNduzB6geveXhQ9TrqBtZwYQBIQ" />
+    <meta name="theme-color" content="#2196F3">
     <link rel="icon" href="favicon.ico"> {{ if .IsPage }}
+    <link rel="canonical" href="{{.Permalink}}" />
     <title>{{ .Title }} - {{ .Site.Title }}</title>
     {{ else }}
     <title>{{ .Site.Title }}</title>

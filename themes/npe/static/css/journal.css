@@ -1,5 +1,5 @@
 body {
-    background-color: #ddd;
+    background-color: #eee;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 24px;
@@ -73,7 +73,7 @@ h4 {
 }
 
 .language-link {
-    color: #ddd;
+    color: #eee;
 }
 
 .language-link:hover,
