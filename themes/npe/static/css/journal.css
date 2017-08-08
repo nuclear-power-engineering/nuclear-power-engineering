@@ -5,25 +5,32 @@ body {
     line-height: 24px;
 }
 
-h1 {
+.titlelink,
+.titlelink > a,
+.titlelink > a:hover {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #eee;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     font-size: 45px;
+    line-height: 49.5px;
 }
 
-h2 {
+h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-h3 {
+h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
 }
 
-h4 {
+h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
 }

@@ -16,7 +16,7 @@
                     {{ range .Data.Pages }}
                     <div class="panel panel-default card-md">
                         <div class="panel-body">
-                            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></12>
                             <p class="plank">
                                 <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{if eq $.Site.LanguageCode "ru-ru"}} {{dateFormat "02.01.2006" .Date }} {{else}} {{dateFormat "1/02/2006" .Date }} {{end}}
                                 <a href="{{ .Site.BaseURL }}issue/{{ .Params.issue}}/"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
