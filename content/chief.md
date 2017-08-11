@@ -23,4 +23,4 @@ C 1985 г. по 2001 г. – ректор Обнинского институт�
 
 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> [kazansky@iate.obninsk.ru](mailto:kazansky@iate.obninsk.ru)
 
-<span class="glyphicon glyphicon-globe" aria-hidden="true"></span> [nuclear-power-engineering.github.io/chief](http://nuclear-power-engineering.github.io/chief/)
+<span class="glyphicon glyphicon-globe" aria-hidden="true"></span> [nuclear-power-engineering.ru/chief](https://nuclear-power-engineering.ru/chief/)
