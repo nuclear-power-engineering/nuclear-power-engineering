@@ -4,10 +4,10 @@ services:
   - docker
 
 before_install:
-- docker pull djbelyak/hugo-selectel:25.1
+- docker pull djbelyak/hugo-selectel:27.1
 - docker images
 
 script:
-- docker run --rm --name hs -v `pwd`:/data djbelyak/hugo-selectel:25.1 hugo --theme npe --config=config.toml --destination=public
-- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:25.1 hugo --theme npe --config=config_en.toml --destination=public/en
-- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:25.1 selectelupload -user ${SELECTEL_USER} -password ${SELECTEL_PASS} -container ${SELECTEL_BUCKET} -dir /data/public
+- docker run --rm --name hs -v `pwd`:/data djbelyak/hugo-selectel:27.1 hugo --theme npe --config=config.toml --destination=public
+- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 hugo --theme npe --config=config_en.toml --destination=public/en
+- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 selectelupload -user ${SELECTEL_USER} -password ${SELECTEL_PASS} -container ${SELECTEL_BUCKET} -dir /data/public
