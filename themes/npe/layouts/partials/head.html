@@ -16,6 +16,17 @@
     {{ else }}
     <title>{{ .Site.Title }}</title>
     {{ end }}
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71522545-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-71522545-4');
+    </script>
+
 
     <!-- Bootstrap core CSS -->
     <link href="{{ .Site.BaseURL }}/css/bootstrap.css" rel="stylesheet">
