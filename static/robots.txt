@@ -1,0 +1,4 @@
+User-agent: *
+Host: nuclear-power-engineering.ru
+Sitemap: https://nuclear-power-engineering.ru/sitemap.xml
+Sitemap: https://nuclear-power-engineering.ru/en/sitemap.xml
