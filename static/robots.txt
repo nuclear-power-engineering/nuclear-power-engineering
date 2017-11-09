@@ -1,4 +1,9 @@
-User-agent: *
+User-Agent: *
+
+User-Agent: GoogleBot
+Allow: /*.pdf$
+
+User-Agent: YandexBot
 Host: nuclear-power-engineering.ru
 Sitemap: https://nuclear-power-engineering.ru/sitemap.xml
 Sitemap: https://nuclear-power-engineering.ru/en/sitemap.xml
