@@ -17,7 +17,7 @@ copyright = "Журнал «Известия вузов. Ядерная энер
   to_top = "К началу"
 
   yandex = "57b82e3c819d208c"
-  google = "UA-71522545-2"
+  google = "UA-71522545-4"
 
 [taxonomies]
   issue = "issue"
@@ -97,7 +97,7 @@ copyright = "Журнал «Известия вузов. Ядерная энер
 
 [[menu.for_readers]]
   name = "Текущий номер"
-  url = "/issue/2017-02/"
+  url = "/issue/2017-03/"
   weight = 1
 
 [[menu.for_readers]]
