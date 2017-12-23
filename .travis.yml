@@ -10,4 +10,5 @@ before_install:
 script:
 - docker run --rm --name hs -v `pwd`:/data djbelyak/hugo-selectel:27.1 hugo --theme npe --config=config.toml --destination=public
 - docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 hugo --theme npe --config=config_en.toml --destination=public/en
-- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 selectelupload -user ${SELECTEL_USER} -password ${SELECTEL_PASS} -container ${SELECTEL_BUCKET} -dir /data/public
+- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 tar -czvf /data/public.tar.gz /data/public
+- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 supload -u ${SELECTEL_USER} -k ${SELECTEL_PASS} -z tar.gz ${SELECTEL_BUCKET} /data/public.tar.gz 
