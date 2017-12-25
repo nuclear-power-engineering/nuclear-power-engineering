@@ -11,4 +11,4 @@ script:
 - docker run --rm --name hs -v `pwd`:/data djbelyak/hugo-selectel:27.1 hugo --theme npe --config=config.toml --destination=public
 - docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 hugo --theme npe --config=config_en.toml --destination=public/en
 - docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 tar -czf /data/public.tar.gz /data/public
-- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 supload -u ${SELECTEL_USER} -k ${SELECTEL_PASS} -z tar.gz ${SELECTEL_BUCKET} /data/public.tar.gz 
+- travis_wait 30 docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 supload -u ${SELECTEL_USER} -k ${SELECTEL_PASS} -z tar.gz ${SELECTEL_BUCKET} /data/public.tar.gz 
