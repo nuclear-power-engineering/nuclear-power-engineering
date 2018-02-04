@@ -16,4 +16,10 @@ RUN set -ex \
 
 
 FROM nginx:alpine
-COPY --from=build /tmp/site/public /usr/share/nginx/html
+ARG crt
+ARG key
+COPY --chown=www-data:www-data --from=build /tmp/site/public /usr/share/nginx/html
+COPY --chown=www-data:www-data nginx.conf /etc/nginx/conf.d/default.conf
+RUN set -ex \
+    && echo "$crt" > /etc/nginx/domain.crt \
+    && echo "$key" > /etc/nginx/domain.key
