@@ -1,4 +1,4 @@
-baseurl = "https://nuclear-power-engineering.ru/en/"
+baseurl = "http://nuclear-power-engineering.ru/en/"
 languageCode = "en-us"
 title = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
 contentdir = "content_en"
