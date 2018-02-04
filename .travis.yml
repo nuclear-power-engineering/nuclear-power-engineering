@@ -4,11 +4,8 @@ services:
   - docker
 
 before_install:
-- docker pull djbelyak/hugo-selectel:27.1
-- docker images
+- docker login --username $USER --password $PASS
 
 script:
-- docker run --rm --name hs -v `pwd`:/data djbelyak/hugo-selectel:27.1 hugo --theme npe --config=config.toml --destination=public
-- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 hugo --theme npe --config=config_en.toml --destination=public/en
-- docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 tar -czf /data/public.tar.gz -C /data/public .
-- travis_wait 60 docker run --rm --name hs -v `pwd`:/data  djbelyak/hugo-selectel:27.1 supload -u ${SELECTEL_USER} -k ${SELECTEL_PASS} -z tar.gz ${SELECTEL_BUCKET} /data/public.tar.gz 
+- docker build -t djbelyak/npe:latest .
+- docker push djbelyak/npe:latest
