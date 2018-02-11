@@ -7,8 +7,8 @@ title = "Set of documents that accompanies the publication"
 
 #### License agreement
 
-<span class="glyphicon glyphicon-file" aria-hidden="true"></span>  [Download (Microsoft Word file, in Russian)](http://nuclear-power-engineering.github.io/en/doc/contract.doc)
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span>  [Download (Microsoft Word file, in Russian)](/en/doc/contract.doc)
 
 #### Act of reception and transmission of work
 
-<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Download (Microsoft Word file, in Russian)](http://nuclear-power-engineering.github.io/en/doc/act.doc)
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Download (Microsoft Word file, in Russian)](/en/doc/act.doc)

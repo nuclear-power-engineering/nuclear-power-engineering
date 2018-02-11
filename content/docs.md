@@ -7,8 +7,8 @@ title = "Набор документов, сопровождающий публ�
 
 #### Лицензионный договор
 
-<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](http://nuclear-power-engineering.github.io/doc/contract.doc)
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/contract.doc)
 
 #### Акт приема-передачи произведения
 
-<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](http://nuclear-power-engineering.github.io/doc/act.doc)
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/act.doc)
