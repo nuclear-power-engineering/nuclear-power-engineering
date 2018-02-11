@@ -16,10 +16,6 @@ RUN set -ex \
 
 
 FROM nginx:alpine
-#ARG crt
-#ARG key
 COPY --from=build /tmp/site/public /usr/share/nginx/html
-#COPY nginx.conf /etc/nginx/conf.d/default.conf
-#RUN set -ex \
-#    && echo "$crt" > /etc/nginx/domain.crt \
-#    && echo "$key" > /etc/nginx/domain.key
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+VOLUME [ "/opt" ]
