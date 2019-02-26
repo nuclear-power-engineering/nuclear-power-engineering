@@ -11,7 +11,7 @@ ATTENTION! Please note that whereas it is acceptable that some authors are not m
 
 Recommended examples for writing References 
 <ul><u>Journal article</u></ul>
-Kascheev M.V. Modelirovanie stratifikacii komponent koriuma pri tyazheloj avarii [Modeling of stratification of corium components in a severe accident]. Izvestiya vuzov. Yadernaya energetika. 2002, no. 3, pp. 3–13.
+Kascheev M.V. Modelirovanie stratifikacii komponent koriuma pri tyazheloj avarii [Modeling of stratification of corium components in a severe accident]. Izvestiya vuzov. Yadernaya Energetika. 2002, no. 3, pp. 3–13.
 <ul><u>Book</u></ul>
 Subbotin V.I., Sorokin D.N., Ovechkin D.M., Kudryavcev A.P. Teploobmen pri kipenii metallov v usloviyah estestvennoj konvekcii [Boiling heat transfer of metals under natural convection]. Moscow, Nauka Publ., 1969. 287 p.
 

@@ -17,14 +17,14 @@ title = "Рекомендации по подготовке ссылок в ла
 Рекомендуемые примеры написания элементов References.  
 
 <ul><u>Описание статьи из журнала</u></ul>
-Kascheev M.V. Modelirovanie stratifikacii komponent koriuma pri tyazheloj avarii [Modeling of stratification of corium components in severe accident]. Izvestia vuzov. Yadernaya energetika. 2002, no. 3, pp. 3–13.
+Kascheev M.V. Modelirovanie stratifikacii komponent koriuma pri tyazheloj avarii [Modeling of stratification of corium components in severe accident]. Izvestiya vuzov. Yadernaya Energetika. 2002, no. 3, pp. 3–13.
 или
-Kascheev M.V. Modeling of stratification of corium components in severe accident. Izvestia vuzov. Yadernaya energetika. 2002, no. 3, pp. 3–13 (in Russian).
+Kascheev M.V. Modeling of stratification of corium components in severe accident. Izvestiya vuzov. Yadernaya Energetika. 2002, no. 3, pp. 3–13 (in Russian).
 <ul><u>Описание книги</u></ul>
 Subbotin V.I., Sorokin D.N., Ovechkin D.M., Kudryavcev A.P. Teploobmen pri kipenii metallov v usloviyah estestvennoj konvekcii [Boiling heat transfer of metals under conditions of natural convection]. Moscow, Nauka Publ. 1969. 287 p.
 Lindorf L.S., Mamikonyants L.G., eds. Ekspluataciya turbogeneratorov s neposredstvennym ohlazhdeniem [Operation of turbine generators with direct cooling]. Moscow, Energiya Publ. 1972. 352 p.
 Kanevskaya R.D. Matematicheskoe modelirovanie gidrodinamicheskih processov razrabotki mestorozhdenij uglevodorodov [Mathematical modeling of hydrodynamic processes of hydrocarbon deposit development]. Izhevsk, 2002. 140 p.
-Izvekov V.I., Serikhin N.A., Abramov A.I. Proektirovanie turbogeneratorov [Design of turbogenerators]. Moscow, MEI Publ. 2005. 440 p.
+Izvekov V.I., Serikhin N.A., Abramov A.I. Proektirovanie turbogeneratorov [Design of turbo-generators]. Moscow, MEI Publ. 2005. 440 p.
 <ul><u>Описание диссертации или автореферата диссертации</u></ul>
 Semyonov V.I. Matematicheskoe modelirovanie plazmy v sisteme kompaktnyj tor. Diss. dokt. fiz.mat. nauk [Mathematical modeling of the plasma in the compact torus. Dr. phys. and math. sci. diss.]. Moscow, 2003. 272 p.
 или

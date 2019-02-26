@@ -1,14 +1,14 @@
 baseurl = "https://nuclear-power-engineering.ru/en/"
 languageCode = "en-us"
-title = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
+title = "Izvestiya vuzov. Yadernaya Energetika"
 contentdir = "content_en"
 publishdir = "public/en"
 dataDir = "data_en"
-copyright = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
+copyright = "Izvestiya vuzov. Yadernaya Energetika"
 
 [params]
   description = "The peer-reviewed scientific and technology journal. ISSN: 0204-3327"
-  author = "Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika"
+  author = "Izvestiya vuzov. Yadernaya Energetika"
   archive = "Journal archive"
   udc = "UDC:"
   open = "Open PDF file"

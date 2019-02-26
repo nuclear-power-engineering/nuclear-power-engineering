@@ -5,7 +5,7 @@ title = "Publication ethics"
 
 +++
 
-The editors of the “Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika” Journal adhere to the international publication ethics principles, including accountability, fairness, confidentiality, disclosure policy, consideration of possible conflicts of interests, etc. The editorial board follows the recommendations of the Committee on Publication Ethics and draws on the valuable experience of the world's leading academic publishers, including the Elsevier requirements for peer-reviewed academic journals in accordance with international publication ethics principles.
+The editors of the “Izvestiya vuzov. Yadernaya Energetika” Journal adhere to the international publication ethics principles, including accountability, fairness, confidentiality, disclosure policy, consideration of possible conflicts of interests, etc. The editorial board follows the recommendations of the Committee on Publication Ethics and draws on the valuable experience of the world's leading academic publishers, including the Elsevier requirements for peer-reviewed academic journals in accordance with international publication ethics principles.
 
 
 ### Author Responsibilities
