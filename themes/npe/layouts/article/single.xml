@@ -4,7 +4,7 @@
 		<timestamp>{{ now.Unix }}</timestamp>
 		<depositor>
 			<depositor_name>mephi</depositor_name>
-			<email_address>oapanin@mephi.ru</email_address>
+			<email_address>adsmirnov@mephi.ru</email_address>
 		</depositor>
 		<registrant>National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)</registrant>
 	</head>
