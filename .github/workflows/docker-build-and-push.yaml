@@ -1,6 +1,8 @@
 name: Docker
 
 on:
+  push:
+  workflow_dispatch:
 
 jobs:
   docker:
