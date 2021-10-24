@@ -20,7 +20,7 @@
                 <li class="ru">
                     {{$link := replace .Permalink "en/" "" }}
                     {{ if in .Permalink "tag" }}
-                        {{$link = replace .Site.BaseURL "en" "" }}
+                        {{$link = replace .Site.BaseURL "en/" "" }}
                     {{ end }}
                     <a href="{{ $link }}" class="language-link" lang="ru"><img class="language-icon" typeof="foaf:Image" src="{{ .Site.BaseURL }}img/ru.png" width="16" height="12" alt="Русский" title="Русский"> Русский</a>
                 </li>
