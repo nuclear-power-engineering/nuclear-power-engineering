@@ -74,8 +74,7 @@ Russian).
 
 *Описание интернет-ресурса*
 
-Rules for the Citing of Sources. Available at: http://www.
-scribd.com/doc/1034528/ (accessed Feb. 7, 2011) (in Russian).
+Rules for the Citing of Sources. Available at: http://www.scribd.com/doc/1034528/ (accessed Feb. 7, 2011) (in Russian).
 
 ПРИМЕЧАНИЯ
 

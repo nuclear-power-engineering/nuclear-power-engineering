@@ -38,4 +38,4 @@ submarines and for his computational and experimental work on fast neutron react
 
 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> [kazansky@iate.obninsk.ru](mailto:kazansky@iate.obninsk.ru)
 
-<span class="glyphicon glyphicon-globe" aria-hidden="true"></span> [nuclear-power-engineering.github.io/en/chief](http://nuclear-power-engineering.github.io/en/chief/)
+<span class="glyphicon glyphicon-globe" aria-hidden="true"></span> [nuclear-power-engineering.ru/en/chief](http://nuclear-power-engineering.ru/en/chief/)
