@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> {{$desc := .Site.Params.description }} {{ if .Description }} {{$desc := .Description | markdownify | chomp}} {{ end }}
+    <meta name="viewport" content="width=device-width, initial-scale=1"> {{$desc := .Site.Params.description }} {{ if .Description }} {{$desc = .Description | markdownify | chomp}} {{ end }}
     <meta name="description" content="{{ substr $desc  0 150}}">
     <meta name="author" content="{{ .Site.Params.author }}">
     <meta name="yandex-verification" content="{{ .Site.Params.yandex }}" />
