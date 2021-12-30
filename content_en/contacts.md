@@ -7,7 +7,7 @@ title = "Contacts"
 
 <span class="glyphicon glyphicon-home" aria-hidden="true"></span> 249040, Obninsk, Kaluga region, Campus, 1. INPE, RIO; Editorial Board "Izvestiya vuzov. Yadernaya Energetika"
 
-<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7 (48439) 70861, ip 132
+<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7 (48439) 79490, ip 132
 
 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> [rio@iate.obninsk.ru](mailto:rio@iate.obninsk.ru)
 
