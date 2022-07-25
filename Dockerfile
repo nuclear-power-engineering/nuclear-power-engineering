@@ -1,10 +1,10 @@
 FROM alpine:latest AS build
 
-ADD https://github.com/gohugoio/hugo/releases/download/v0.98.0/hugo_0.98.0_Linux-64bit.tar.gz /tmp
+ADD https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_0.101.0_Linux-64bit.tar.gz /tmp
 
 RUN set -ex \
-    && tar -xzvf /tmp/hugo_0.98.0_Linux-64bit.tar.gz -C /usr/local/bin/ \
-    && rm -rf /tmp/hugo_0.98.0_Linux-64bit.tar.gz \
+    && tar -xzvf /tmp/hugo_0.101.0_Linux-64bit.tar.gz -C /usr/local/bin/ \
+    && rm -rf /tmp/hugo_0.101.0_Linux-64bit.tar.gz \
     && chmod +x /usr/local/bin/hugo
 
 COPY . /tmp/site/
