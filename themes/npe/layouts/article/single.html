@@ -78,6 +78,55 @@
 
                             </p>
 
+                            {{if .Params.doi}}
+
+                            {{if eq $.Site.LanguageCode "ru-ru"}} 
+                            <p class="plank">
+                                <span class="plank-span">
+                                    <b>Ссылка для цитирования статьи:</b>
+                                    {{ $authors := slice }}
+                                    {{ range .Params.authors }}
+
+                                        {{ $author := .}}
+                                        {{ range $key, $value := $.Site.Data.authors}}
+                                            {{if eq $author $key}}
+                                                {{ $full_name := split $value.full_name " " }}
+                                                {{if eq (len $full_name) 2 }}
+                                                    {{ $authors = $authors | append $value.full_name}}
+                                                {{else}}
+                                                    {{$authors = $authors | append (print (index $full_name 0) " " (slicestr (index $full_name 1) 0 1) "." (slicestr (index $full_name 2) 0 1) ".")}}
+                                                {{end}}
+                                            {{end}}
+                                        {{end}}
+                                    {{end}}
+
+                                    <samp><em>{{ delimit $authors ", " }}</em> {{ .Title }}. // Известия вузов. Ядерная энергетика. – {{dateFormat "2006" .Date}}. – № {{ substr  .Params.issue -1 }}. – С. {{ .Params.first_page }}-{{ .Params.last_page }}. DOI: {{.Params.doi}} .</samp>
+                                </span>
+                            </p>
+                            {{else}}
+                            <p class="plank">
+                                <span class="plank-span">
+                                    <b>Link for citing the article:</b>
+                                    {{ $authors := slice }}
+                                    {{ range .Params.authors }}
+
+                                        {{ $author := .}}
+                                        {{ range $key, $value := $.Site.Data.authors}}
+                                            {{if eq $author $key}}
+                                                {{ $authors = $authors | append $value.name}}
+                                            {{end}}
+                                        {{end}}
+                                    {{end}}
+
+                                    <samp>{{ delimit $authors ", " }} {{ .Title }}. <em>Izvestiya
+                                        vuzov. Yadernaya Energetika.</em> {{dateFormat "2006" .Date}}, no. {{ substr  .Params.issue -1 }}, pp. {{ .Params.first_page }}-{{ .Params.last_page }}; DOI: {{.Params.doi}} (in Russian).</samp>
+                                </span>
+                            </p>
+                            {{end}}
+                            {{end}}
+
+                            
+
                             <div class="panel-body text-center">
                                 <a class="btn btn-primary btn-lg btn-mat" href="{{ .Params.file }}" target="_blank"
                                     role="button">{{$.Site.Params.open}}</a>
