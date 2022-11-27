@@ -85,95 +85,20 @@ Rules for the Citing of Sources. Available at: http://www.scribd.com/doc/1034528
 указывают его название по-английски, а далее в скобках – транслит.
 Например, ссылка на аглоязычную версию Журнала технической физики (ЖТФ),
 издающегося на двух языках, даётся в виде ***Technical Physics*
-(*Zhurnal Tekhnicheskoy Fiziki*)**. 
+(*Zhurnal Tekhnicheskoy Fiziki*)**.
 
 2\. Журнал «Известия вузов. Ядерная энергетика» до 2016 г. рекомендуется
 представлять в виде\
 ***Izvestia Vysshikh Uchebnykh Zawedeniy. Yadernaya Energetika*.\
 **Начиная с 2016 г. – ***Izvestiya vuzov. Yadernaya Energetika.***
 
-
 Рекомендуемая схема транслитерации
-<div class="table-responsive">
-<table  class="table table-bordered">
-  <tr>
-    <td>А</td>
-<td>Б</td>
-<td>В</td>
-<td>Г</td>
-<td>Д</td>
-<td>Е</td>
-<td>Ё</td>
-<td>Ж</td>
-<td>З</td>
-<td>И</td>
-<td>Й</td>
-<td>К</td>
-<td>Л</td>
-<td>М</td>
-<td>Н</td>
-<td>О</td>
-<td>П</td>
-  </tr>
-  <tr>
-    <td>a</td>
-<td>b</td>
-<td>v</td>
-<td>g</td>
-<td>d</td>
-<td>e</td>
-<td>yo</td>
-<td>zh</td>
-<td>z</td>
-<td>i</td>
-<td>j</td>
-<td>k</td>
-<td>l</td>
-<td>m</td>
-<td>n</td>
-<td>o</td>
-<td>p</td>
-  </tr>
-<tr>
-<td>Р</td>
-<td>С</td>
-<td>Т</td>
-<td>У</td>
-<td>Ф</td>
-<td>Х</td>
-<td>Ц</td>
-<td>Ч</td>
-<td>Ш</td>
-<td>Щ</td>
-<td>Ь</td>
-<td>Ы</td>
-<td>Ъ</td>
-<td>Э</td>
-<td>Ю</td>
-<td>Я</td>
-<td></td>
-</tr>
-<tr>
-<td>r</td>
-<td>s</td>
-<td>t</td>
-<td>u</td>
-<td>f</td>
-<td>h</td>
-<td>c,ts</td>
-<td>ch</td>
-<td>sh</td>
-<td>sch</td>
-<td>'</td>
-<td>y</td>
-<td>''</td>
-<td>e</td>
-<td>yu</td>
-<td>ya</td>
-<td></td>
-</tr>
-</table>
-</div>
+
+| А | Б | В | Г | Д | Е | Ё    | Ж  | З  | И   | Й | К | Л  | М | Н  | О  | П |
+|---|---|---|---|---|---|------|----|----|-----|---|---|----|---|----|----|---|
+| a | b | v | g | d | e | yo   | zh | z  | i   | j | k | l  | m | n  | o  | p |
+| Р | С | Т | У | Ф | Х | Ц    | Ч  | Ш  | Щ   | Ь | Ы | Ъ  | Э | Ю  | Я  |
+| r | s | t | u | f | h | c,ts | ch | sh | sch | ' | y | '' | e | yu | ya |
 
 Фамилии и инициалы авторов должны быть записаны так, как представляют их сами авторы. В противном случае система автоматического поиска будет идентифицировать их как разных авторов.
 Более подробно с методическими рекомендациями по подготовке и оформлению различных элементов пристатейных списков литературы для варианта «References» можно ознакомиться на сайте Elsevier:

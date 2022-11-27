@@ -36,86 +36,11 @@ Pravila Tsitirovaniya Istochnikov (Rules for Citing Sources) Available at: http:
 
 Recommended transliteration scheme 
 
-<div class="table-responsive">
-<table  class="table table-bordered">
-  <tr>
-    <td>А</td>
-<td>Б</td>
-<td>В</td>
-<td>Г</td>
-<td>Д</td>
-<td>Е</td>
-<td>Ё</td>
-<td>Ж</td>
-<td>З</td>
-<td>И</td>
-<td>Й</td>
-<td>К</td>
-<td>Л</td>
-<td>М</td>
-<td>Н</td>
-<td>О</td>
-<td>П</td>
-  </tr>
-  <tr>
-    <td>a</td>
-<td>b</td>
-<td>v</td>
-<td>g</td>
-<td>d</td>
-<td>e</td>
-<td>yo</td>
-<td>zh</td>
-<td>z</td>
-<td>i</td>
-<td>j</td>
-<td>k</td>
-<td>l</td>
-<td>m</td>
-<td>n</td>
-<td>o</td>
-<td>p</td>
-  </tr>
-<tr>
-<td>Р</td>
-<td>С</td>
-<td>Т</td>
-<td>У</td>
-<td>Ф</td>
-<td>Х</td>
-<td>Ц</td>
-<td>Ч</td>
-<td>Ш</td>
-<td>Щ</td>
-<td>Ь</td>
-<td>Ы</td>
-<td>Ъ</td>
-<td>Э</td>
-<td>Ю</td>
-<td>Я</td>
-<td></td>
-</tr>
-<tr>
-<td>r</td>
-<td>s</td>
-<td>t</td>
-<td>u</td>
-<td>f</td>
-<td>h</td>
-<td>c,ts</td>
-<td>ch</td>
-<td>sh</td>
-<td>sch</td>
-<td>'</td>
-<td>y</td>
-<td>''</td>
-<td>e</td>
-<td>yu</td>
-<td>ya</td>
-<td></td>
-</tr>
-</table>
-</div>
+| А | Б | В | Г | Д | Е | Ё    | Ж  | З  | И   | Й | К | Л  | М | Н  | О  | П |
+|---|---|---|---|---|---|------|----|----|-----|---|---|----|---|----|----|---|
+| a | b | v | g | d | e | yo   | zh | z  | i   | j | k | l  | m | n  | o  | p |
+| Р | С | Т | У | Ф | Х | Ц    | Ч  | Ш  | Щ   | Ь | Ы | Ъ  | Э | Ю  | Я  |
+| r | s | t | u | f | h | c,ts | ch | sh | sch | ' | y | '' | e | yu | ya |
 
 The authors' names and initials should be written in the same way as authors themselves present them. Otherwise, the automated search system will identify them as different authors. 
 You can find more detailed instructions on preparation of References on the Elsevier website at: 
