@@ -1,0 +1,42 @@
+version: '2.4'
+
+services:
+
+  website:
+    image: djbelyak/npe:latest
+    restart: always
+    container_name: website
+    hostname: website
+    user: root
+    logging: &default_logging
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+    ports:
+      - "80:8080"
+      - "443:8443"
+    volumes:
+      - ./var/ssl:/srv/var/ssl
+      - ./var/logs:/srv/var/logs
+    environment:
+      - TZ=Russia/Moscow
+      - GZIP=true
+      - MAX_SIZE=256K
+      - LOGGER_ENABLED=true
+      - LOGGER_FILE=/srv/var/logs/access.log
+      - SSL_TYPE=auto
+      - SSL_ACME_EMAIL=djbelyak@gmail.com
+      - SSL_ACME_FQDN=nuclear-power-engineering.ru,static.nuclear-power-engineering.ru
+      - SSL_ACME_LOCATION=/srv/var/ssl
+      - HEADER=
+          X-Frame-Options:SAMEORIGIN,
+          X-XSS-Protection:1; mode=block;,
+          X-Content-Type-Options:nosniff,
+          Strict-Transport-Security:max-age=31536000,
+          Referrer-Policy:no-referrer,
+          Content-Security-Policy:default-src 'self'; style-src 'self' 'unsafe-inline';
+      - ASSETS_LOCATION=/www
+      - ASSETS_CACHE=48h,text/html:1m
+      - STATIC_ENABLED=true
+      - STATIC_RULES=static.nuclear-power-engineering.ru,/(.*),https://165616.selcdn.ru/static.nuclear-power-engineering.ru/$$1
