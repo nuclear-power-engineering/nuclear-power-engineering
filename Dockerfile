@@ -11,11 +11,13 @@ COPY . /tmp/site/
 WORKDIR /tmp/site/
 
 RUN set -ex \
-    && /usr/local/bin/hugo --theme npe --config=config_en.toml --destination=public/en \
-    && /usr/local/bin/hugo --theme npe --config=config.toml --destination=public
+    && /usr/local/bin/hugo --minify --theme npe --config=config_en.toml --destination=public/en \
+    && /usr/local/bin/hugo --minify --theme npe --config=config.toml --destination=public
 
 
-FROM nginx:alpine
-COPY --from=build /tmp/site/public /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-VOLUME [ "/opt" ]
+
+FROM ghcr.io/umputun/reproxy
+COPY --from=build /tmp/site/public /srv/site
+EXPOSE 8080
+USER app
+ENTRYPOINT ["/srv/reproxy", "--assets.location=/srv/site"]

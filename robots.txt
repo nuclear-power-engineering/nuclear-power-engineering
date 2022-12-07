@@ -1,4 +1,0 @@
-User-agent: Googlebot
-Disallow: /tags
-User-agent: Yandex
-Disallow: /tags
