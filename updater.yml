@@ -2,4 +2,4 @@ tasks:
   - name: website
     command: |
       echo "update website"
-      ssh root@172.17.0.1 "cd /root && docker-compose pull website && docker-compose up -d website"
+      ssh root@172.17.0.1 "cd /root && docker-compose pull website && docker-compose up -d website && docker system prune -a -f"

@@ -44,7 +44,6 @@ services:
       - STATIC_ENABLED=true
       - STATIC_RULES=static.nuclear-power-engineering.ru,/(.*),https://165616.selcdn.ru/static.nuclear-power-engineering.ru/$$1
       - DOCKER_ENABLED=true
-      - TIMEOUT_RESP_HEADER=1m
 
   updater:
     image: ghcr.io/umputun/updater:master
