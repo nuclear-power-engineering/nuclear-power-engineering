@@ -19,6 +19,7 @@ services:
     volumes:
       - ./var/ssl:/srv/var/ssl
       - ./var/logs:/srv/var/logs
+      - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
       - TZ=Russia/Moscow
       - GZIP=true
@@ -27,16 +28,40 @@ services:
       - LOGGER_FILE=/srv/var/logs/access.log
       - SSL_TYPE=auto
       - SSL_ACME_EMAIL=djbelyak@gmail.com
-      - SSL_ACME_FQDN=nuclear-power-engineering.ru,static.nuclear-power-engineering.ru
+      - SSL_ACME_FQDN=
+          nuclear-power-engineering.ru,
+          static.nuclear-power-engineering.ru,
+          update.nuclear-power-engineering.ru
       - SSL_ACME_LOCATION=/srv/var/ssl
       - HEADER=
           X-Frame-Options:SAMEORIGIN,
           X-XSS-Protection:1; mode=block;,
           X-Content-Type-Options:nosniff,
           Strict-Transport-Security:max-age=31536000,
-          Referrer-Policy:no-referrer,
-          Content-Security-Policy:default-src 'self'; style-src 'self' 'unsafe-inline';
+          Referrer-Policy:no-referrer
       - ASSETS_LOCATION=/www
       - ASSETS_CACHE=48h,text/html:1m
       - STATIC_ENABLED=true
       - STATIC_RULES=static.nuclear-power-engineering.ru,/(.*),https://165616.selcdn.ru/static.nuclear-power-engineering.ru/$$1
+      - DOCKER_ENABLED=true
+      - TIMEOUT_RESP_HEADER=1m
+
+  updater:
+    image: ghcr.io/umputun/updater:master
+    container_name: "updater"
+    hostname: "updater"
+    restart: always
+    logging: *default_logging
+    environment:
+      - TZ=Russia/Moscow
+      - LISTEN=0.0.0.0:8080
+      - CONF=/srv/etc/updater.yml
+    ports:
+      - "8080"
+    volumes:
+      - ./.ssh/id_rsa:/home/app/.ssh/id_rsa
+      - ./etc:/srv/etc
+      - /var/run/docker.sock:/var/run/docker.sock
+    labels:
+      reproxy.server: 'update.nuclear-power-engineering.ru'
+      reproxy.route: '^/(.*)'
