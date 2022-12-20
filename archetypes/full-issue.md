@@ -1,6 +1,6 @@
 +++
 categories = "full-issue"
-file = "pdf/2016-02/2016-02-full-issue.pdf"
+file = "https://static.nuclear-power-engineering.ru/journals/2016/02.pdf"
 issue = "2016-02"
 issue_name = "2016 - №02"
 weight = 0
