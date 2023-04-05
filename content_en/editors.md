@@ -41,9 +41,11 @@ B.I. Nigmatulin, Professor, Institute of Natural Monopolies Research
 
 V.A. Ostreikovskiy, Professor, Surgut State University
 
+A.V. Panov, RAS’s Professor , Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
+
 I.L. Pioro, Professor, University of Ontario, Ontario, Canada
 
-V.I. Rachkov, Corresponding Member of RAS, Professor, Proryv JSC, Moscow
+V.I. Rachkov, RAS’s Corresponding Member, Professor, Proryv JSC, Moscow
 
 M. Saito, Professor, Tokyo Institute of Technology, Tokyo, Japan
 
@@ -59,7 +61,9 @@ V.A. Stepanov, Professor, Obninsk Institute for Nuclear Power Engineering, Natio
 
 M.N. Strikhanov, Professor, National Research Nuclear University MEPhI
 
-A.V. Zrodnikov, Professor, VNIIAES JSC, Moscow; SSC RF IPPE JSC, Obninsk
+V.M. Troyanov, IPPE JSC Scientific Director, Obninsk
+
+A.V. Zrodnikov, Professor, IPPE JSC, Obninsk
 
 B.I. Yatsalo, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
 
