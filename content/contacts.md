@@ -5,9 +5,9 @@ title = "Контакты"
 
 +++
 
-<span class="glyphicon glyphicon-home" aria-hidden="true"></span> 249040, г.Обнинск Калужской области, Студгородок, 1. ИАТЭ, РИО; редакция журнала "Ядерная энергетика. Известия вузов"
+<span class="glyphicon glyphicon-home" aria-hidden="true"></span> 249039, Калужская обл., г.Обнинск, Студгородок, 1. ИАТЭ НИЯУ МИФИ, РИО
 
-<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7 (48439) 79490, ip 132
+<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7 (48439) 79490, доб. 132
 
 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> [rio@iate.obninsk.ru](mailto:rio@iate.obninsk.ru)
 
