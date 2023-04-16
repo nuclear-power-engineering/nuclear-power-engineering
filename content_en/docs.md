@@ -12,3 +12,7 @@ title = "Set of documents that accompanies the publication"
 #### Act of reception and transmission of work
 
 <span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Download (Microsoft Word file, in Russian)](/en/doc/act.doc)
+
+#### Сonsent to personal data processing
+
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Download (Microsoft Word file, in Russian)](/en/doc/consent_to_personal_data_processing.doc)
