@@ -12,7 +12,3 @@ title = "Набор документов, сопровождающий публ�
 #### Акт приема-передачи произведения
 
 <span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/act.doc)
-
-#### Согласие на обработку персональных данных
-
-<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/consent_to_personal_data_processing.doc)
