@@ -4,9 +4,11 @@ title = "Manuscripts preparation rules"
 
 +++
 
-Authors should prepare manuscripts in accordance with the industry-specific standard «Authors' Manuscripts and Texts for Publication» (ОСТ 29.115—88). Manuscripts are submitted in hard copy and electronic form. They should meet the following requirements: 
+Authors should prepare manuscripts in accordance with the industry-specific standard «Authors' Manuscripts and Texts for Publication» (ОСТ 29.115—88).
+They should meet the following requirements: 
  
-  1. The hard copy should be printed on A4 paper; font - Times New Roman; size – 12 pt.; line spacing – 1.5; (one-side printing). Manuscript structure:
+**1**. The hard copy should be printed on A4 paper; font - Times New Roman; size – 12 pt.; line spacing – 1.5; (one-side printing). 
+Manuscript structure:
     
     * UDC index;
     * title (please avoid abbreviations where possible, a maximum of 15 words);
@@ -28,7 +30,7 @@ Authors should prepare manuscripts in accordance with the industry-specific stan
     * list of references (use transliteration (translit.ru, BGN style) for Romanization of names of cited authors, titles of sources written in Cyrillic letters. Please provide titles of sources in English as well); 
     * information about the author(s)(in English): surname, full first name and patronymic, academic degree, position, institutional affiliation (place of work or study), contact phones, e-mail;
 
- 2. Manuscripts are also submitted in electronic form as files prepared in MS Word in page layout mode; font - Times New Roman; size – 12 pt.; line spacing – 1.5; fit to the width; all margins should be 20 mm. The file should have the name suffix *.doc (or *.rtf) with no macros attached. The file name should start with the name of the first author in the Latin script (for example, Romanov.doc or Romanov.rtf).
+**2**. Manuscripts are also submitted in electronic form as files prepared in MS Word in page layout mode; font - Times New Roman; size – 12 pt.; line spacing – 1.5; fit to the width; all margins should be 20 mm. The file should have the name suffix *.doc (or *.rtf) with no macros attached. The file name should start with the name of the first author in the Latin script (for example, Romanov.doc or Romanov.rtf).
 For tables and captions please use Arial Narrow (size – 9 pt.), single-spaced, with three-point intervals before and after each paragraph.  All tables should be numbered, and each table should have a heading. Please avoid any abbreviations (except the established ones) in the tables. 
 Each figure and each table should be submitted as a separate file (e.g., VolkovRis1.jpg, GaninaTab1.doc etc.). Captions attached to figures and field headings in tables should be presented in Russian. Illustrations are created with the use of such graphic editors as Paint, PhotoShop, CorelDraw, etc. The resolution of color or grayscale TIFF format photographs (halftones) should be 300 dpi.
 When formatting tables and figures, please make sure that they fit the maximum size of the journal page of 135 mm × 215 mm.

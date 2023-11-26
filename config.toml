@@ -3,6 +3,9 @@ languageCode = "ru-ru"
 title = "Известия вузов. Ядерная энергетика"
 copyright = "Журнал «Известия вузов. Ядерная энергетика»"
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
   description = "Рецензируемый научно-технический журнал. ISSN: 0204-3327"
   author = "Журнал «Известия вузов. Ядерная энергетика»"
@@ -97,7 +100,7 @@ copyright = "Журнал «Известия вузов. Ядерная энер
 
 [[menu.for_readers]]
   name = "Текущий номер"
-  url = "/issue/2023-01/"
+  url = "/issue/2023-02/"
   weight = 1
 
 [[menu.for_readers]]
