@@ -65,6 +65,7 @@
                                 {{ .Content }}
                             </p>
 
+                            {{ if .Params.tags }}
                             <p class="plank">
                                 <span class="plank-span">
                                     <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
@@ -77,6 +78,7 @@
                                 </span>
 
                             </p>
+                            {{ end }}
 
                             {{if isset .Params "doi"}}
 
