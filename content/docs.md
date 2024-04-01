@@ -5,10 +5,26 @@ title = "Набор документов, сопровождающий публ�
 
 +++
 
+#### Согласие на обработку персональных данных
+
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/agreement_for_personal_data_processing.doc)
+
 #### Лицензионный договор
 
-<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/contract.doc)
+Персональный:
+
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/personal_licensing_agreement.doc)
+
+На коллектив авторов:
+
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/group_licensing_agreement.doc)
 
 #### Акт приема-передачи произведения
 
-<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/act.doc)
+Персональный:
+
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/personal_act.doc)
+
+На коллектив авторов:
+
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Скачать (файл Microsoft Word)](/doc/group_act.doc)
