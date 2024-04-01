@@ -11,6 +11,6 @@ title = "Contacts"
 
 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> [rio@iate.obninsk.ru](mailto:rio@iate.obninsk.ru)
 
-Editor: Z.I. Snykova
+N.M. Troyanova
 
-Responsible editorial secretary: V.L. Myronovych
+Editor: Z.I. Snykova

@@ -11,6 +11,6 @@ title = "Контакты"
 
 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> [rio@iate.obninsk.ru](mailto:rio@iate.obninsk.ru)
 
-Выпускающий редактор: З.И. Сныкова
+Надежда Михайловна Троянова
 
-Ответственный секретарь редакции: В.Л. Миронович
+Выпускающий редактор: З.И. Сныкова
