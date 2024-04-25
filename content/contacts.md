@@ -9,8 +9,8 @@ title = "Контакты"
 
 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7 (48439) 79490, доб. 132
 
+Надежда Михайловна Троянова
+
 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> [rio@iate.obninsk.ru](mailto:rio@iate.obninsk.ru)
 
-Выпускающий редактор: З.И. Сныкова
-
-Ответственный секретарь редакции: В.Л. Миронович
+Выпускающий редактор: Зоя Ивановна Сныкова

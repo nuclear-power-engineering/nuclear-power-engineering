@@ -11,25 +11,30 @@ Y.A. Kazansky , Professor , Obninsk Institute of Nuclear Energy MEPhI
 
 ### Associate Editors
 
-Yu.A. Korovin, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
-
-N.L.Sal’nikov, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
-
-### Responsible editorial secretary
-
-V.L. Mironovich, Assistant Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
-
-### Editorial board
+V.L. Shablov, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University «MEPhI»
 
 I.A. Chusov, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
 
+### Deputy editor-in-chiff for editorial work
+
+N.M. Troyanova, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
+
+### Editorial board
+
 F. D’Auria, Professor, University of Pisa, Pisa, Italy
+
+T.A. Burtseva, Assistant Professor, MIREA – Russian Technological University, Moscow
 
 S.M. Dmitriev, Professor, Nizhegorodskiy State Technical University
 
 V.V. Kharchenko, Corresponding member of NUAS, Professor, Institute for Problems of Strength, Kiev, Ukraine
 
+Yu.A. Korovin, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
+
 I.I. Kryshev, Professor, Head Researcher, Typhoon SPA, Obninsk
+
+K.A. Kuterbekov, Professor, L.N. Gumilyov Eurasian National University,
+Astana, Republic of Kazakhstan
 
 I.I. Loschakov, Professor, St.Petersburg State Technical University
 
@@ -49,8 +54,6 @@ V.I. Rachkov, RAS’s Corresponding Member, Professor, Proryv JSC, Moscow
 
 M. Saito, Professor, Tokyo Institute of Technology, Tokyo, Japan
 
-V.L. Shablov, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
-
 S.E. Scheklein, Professor, Ural Federal University – Ural Polwer Engineering Institute
 
 A.N. Shmelyov, Professor, National Research Nuclear University MEPhI
@@ -64,8 +67,6 @@ M.N. Strikhanov, Professor, National Research Nuclear University MEPhI
 V.M. Troyanov, IPPE JSC Scientific Director, Obninsk
 
 A.V. Zrodnikov, Professor, IPPE JSC, Obninsk
-
-B.I. Yatsalo, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
 
 ### Managing Editor
 

@@ -5,10 +5,26 @@ title = "Set of documents that accompanies the publication"
 
 +++
 
-#### License agreement
+### Agreement for personal data processing
 
-<span class="glyphicon glyphicon-file" aria-hidden="true"></span>  [Download (Microsoft Word file, in Russian)](/en/doc/contract.doc)
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Download (Microsoft Word file, in Russian)](/doc/agreement_for_personal_data_processing.doc)
+
+#### Licensing agreement
+
+Personal:
+
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Download (Microsoft Word file, in Russian)](/en/doc/personal_licensing_agreement.doc)
+
+For group of authors:
+
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Download (Microsoft Word file, in Russian)](/en/doc/group_licensing_agreement.doc)
 
 #### Act of reception and transmission of work
 
-<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Download (Microsoft Word file, in Russian)](/en/doc/act.doc)
+Personal:
+
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Download (Microsoft Word file, in Russian)](/en/doc/personal_act.doc)
+
+For group of authors:
+
+<span class="glyphicon glyphicon-file" aria-hidden="true"></span> [Download (Microsoft Word file, in Russian)](/en/doc/group_act.doc)

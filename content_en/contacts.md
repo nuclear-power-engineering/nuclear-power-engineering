@@ -9,8 +9,8 @@ title = "Contacts"
 
 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7 (48439) 79490, add. 132
 
+N.M. Troyanova
+
 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> [rio@iate.obninsk.ru](mailto:rio@iate.obninsk.ru)
 
 Editor: Z.I. Snykova
-
-Responsible editorial secretary: V.L. Myronovych
