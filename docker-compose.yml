@@ -3,7 +3,7 @@ version: '2.4'
 services:
 
   website:
-    image: djbelyak/npe:latest
+    image: ghcr.io/nuclear-power-engineering/nuclear-power-engineering:develop
     restart: always
     container_name: website
     hostname: website

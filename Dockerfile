@@ -1,4 +1,4 @@
-FROM alpine:latest AS build
+FROM ghcr.io/linuxcontainers/alpine:latest AS build
 
 ADD https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_0.101.0_Linux-64bit.tar.gz /tmp
 
