@@ -33,6 +33,7 @@
                                 {{ end}}
                             </p>
 
+                            {{ if .Params.authors }}
                             <p class="plank">
                                 <span class="plank-span">
                                     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
@@ -49,6 +50,7 @@
 
                                 </span> {{ end }}
                             </p>
+                            {{ end}}
 
                             {{if .Params.doi}}<p class="plank">
                                 <span class="plank-span">
@@ -57,9 +59,9 @@
                                 </span>
                             </p>{{end}}
 
-                            <div class="text-right">
+                            {{if .Params.udc}}<div class="text-right">
                                 <h3>{{$.Site.Params.udc}} {{.Params.udc }}</h3>
-                            </div>
+                            </div>{{end}}
 
                             <p>
                                 {{ .Content }}
@@ -83,7 +85,7 @@
                             {{if isset .Params "doi"}}
 
                             {{if eq $.Site.LanguageCode "ru-ru"}} 
-                            <p class="plank">
+                            {{if .Params.authors }}<p class="plank">
                                 <span class="plank-span">
                                     <b>Ссылка для цитирования статьи:</b>
                                     {{ $authors := slice }}
@@ -104,9 +106,9 @@
 
                                     <samp><em>{{ delimit $authors ", " }}</em> {{ .Title }}. // Известия вузов. Ядерная энергетика. – {{dateFormat "2006" .Date}}. – № {{ substr  .Params.issue -1 }}. – С. {{ .Params.first_page }}-{{ .Params.last_page }}. DOI: {{.Params.doi}} .</samp>
                                 </span>
-                            </p>
+                            </p>{{end}}
                             {{else}}
-                            <p class="plank">
+                            {{if .Params.authors }}<p class="plank">
                                 <span class="plank-span">
                                     <b>Link for citing the article:</b>
                                     {{ $authors := slice }}
@@ -123,11 +125,11 @@
                                     <samp>{{ delimit $authors ", " }} {{ .Title }}. <em>Izvestiya
                                         vuzov. Yadernaya Energetika.</em> {{dateFormat "2006" .Date}}, no. {{ substr  .Params.issue -1 }}, pp. {{ .Params.first_page }}-{{ .Params.last_page }}; DOI: {{.Params.doi}} (in Russian).</samp>
                                 </span>
-                            </p>
+                            </p>{{end}}
                             {{end}}
                             {{else}}
                             {{if eq $.Site.LanguageCode "ru-ru"}} 
-                            <p class="plank">
+                            {{if .Params.authors }}<p class="plank">
                                 <span class="plank-span">
                                     <b>Ссылка для цитирования статьи:</b>
                                     {{ $authors := slice }}
@@ -148,9 +150,9 @@
 
                                     <samp><em>{{ delimit $authors ", " }}</em> {{ .Title }}. // Известия вузов. Ядерная энергетика. – {{dateFormat "2006" .Date}}. – № {{ substr  .Params.issue -1 }}. – С. {{ .Params.first_page }}-{{ .Params.last_page }}.</samp>
                                 </span>
-                            </p>
+                            </p>{{end}}
                             {{else}}
-                            <p class="plank">
+                            {{if .Params.authors }}<p class="plank">
                                 <span class="plank-span">
                                     <b>Link for citing the article:</b>
                                     {{ $authors := slice }}
@@ -167,7 +169,7 @@
                                     <samp>{{ delimit $authors ", " }} {{ .Title }}. <em>Izvestiya
                                         vuzov. Yadernaya Energetika.</em> {{dateFormat "2006" .Date}}, no. {{ substr  .Params.issue -1 }}, pp. {{ .Params.first_page }}-{{ .Params.last_page }} (in Russian).</samp>
                                 </span>
-                            </p>
+                            </p>{{end}}
                             {{end}}
                             {{end}}
 
