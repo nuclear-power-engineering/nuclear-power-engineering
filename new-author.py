@@ -95,7 +95,7 @@ def get_en_filename():
 author_ru = f'''term="{get_term()}"
 name="{get_ru_initials()} {get_ru_surname()}"
 work="{trim_work(raw_work_ru)}"
-full_name="{get_ru_name()} {get_ru_fathers_name()} {get_ru_surname()}"
+full_name="{get_ru_surname()} {get_ru_name()} {get_ru_fathers_name()}"
 regals="{get_regals(raw_author_ru)}"
 {get_email(raw_author_ru)}
 '''
