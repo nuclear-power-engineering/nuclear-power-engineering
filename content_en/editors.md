@@ -21,7 +21,7 @@ N.M. Troyanova, Obninsk Institute for Nuclear Power Engineering, National Resear
 
 ### Editorial board
 
-F. D’Auria, Professor, University of Pisa, Pisa, Italy
+F.D’Auria, Professor, University of Pisa, Pisa, Italy
 
 T.A. Burtseva, Assistant Professor, MIREA – Russian Technological University, Moscow
 
@@ -33,10 +33,7 @@ Yu.A. Korovin, Professor, Obninsk Institute for Nuclear Power Engineering, Natio
 
 I.I. Kryshev, Professor, Head Researcher, Typhoon SPA, Obninsk
 
-K.A. Kuterbekov, Professor, L.N. Gumilyov Eurasian National University,
-Astana, Republic of Kazakhstan
-
-I.I. Loschakov, Professor, St.Petersburg State Technical University
+K.A. Kuterbekov, Professor, L.N. Gumilyov Eurasian National University, Astana, Republic of Kazakhstan
 
 E.S. Matusevich, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
 
@@ -46,19 +43,23 @@ B.I. Nigmatulin, Professor, Institute of Natural Monopolies Research
 
 V.A. Ostreikovskiy, Professor, Surgut State University
 
-A.V. Panov, RAS’s Professor , Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
+A.V. Panov, RAS’s Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
 
 I.L. Pioro, Professor, University of Ontario, Ontario, Canada
 
+V.P. Povarov, Professor, Branch of Rosenergoatom JSC Novovoronezh NPP Director, Novovoronezh
+
 V.I. Rachkov, RAS’s Corresponding Member, Professor, Proryv JSC, Moscow
 
-M. Saito, Professor, Tokyo Institute of Technology, Tokyo, Japan
+M.Saito, Professor, Tokyo Institute of Technology, Tokyo, Japan
 
 S.E. Scheklein, Professor, Ural Federal University – Ural Polwer Engineering Institute
 
 A.N. Shmelyov, Professor, National Research Nuclear University MEPhI
 
 V.P. Smirnov, Professor, SOSNY Research and Development Company, Dimitrovgrad
+
+S.L. Soloviev, Professor, VNIIAES JSC Scientific Director, Moscow
 
 V.A. Stepanov, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
 
