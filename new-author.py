@@ -1,17 +1,20 @@
 raw_work_ru = '''
-АО «ГНЦ РФ – ФЭИ»,
+ФГБУ ГНЦ РФ ФМБЦ им. А.И. Бурназяна ФМБА России,
 '''
 
 raw_author_ru = '''
-Матвеев Юрий Валентинович, ведущий научный сотрудник, к.ф.-м.н., E-mail: ymatveev@ippe.ru
+Еремина Наталья Александровна, младший научный сотрудник,
+E-mail: eremina-na@mail.ru
 '''
 
 raw_work_en = '''
-IPPE JSC,
+State Research Center – Burnasyan Federal Medical Biophysical Center of the Federal Medical Biological Agency
+(SRC-FMBC),
 '''
 
 raw_author_en = '''
-Yuriy V. Matveev, Researcher, Cand. Sci. (Phys.-Math.), E-mail: ymatveev@ippe.ru
+Natalia A. Eremina, Junior Researcher,
+E-mail: eremina-na@mail.ru
 '''
 
 # Get the surname.

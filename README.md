@@ -121,3 +121,15 @@ rubric_name="Моделирование процессов в объектах �
 rubric="modeling"
 rubric_name="Modelling processes at nuclear facilities"
 ```
+
+### Применение ядерных методов и средств
+
+```toml
+rubric="applicationofnucleartech"
+rubric_name="Применение ядерных методов и средств"
+```
+
+```toml
+rubric="applicationofnucleartech"
+rubric_name="Application of nuclear tech"
+```
