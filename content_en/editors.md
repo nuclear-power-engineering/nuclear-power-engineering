@@ -53,7 +53,7 @@ V.I. Rachkov, RAS’s Corresponding Member, Professor, Proryv JSC, Moscow
 
 M.Saito, Professor, Tokyo Institute of Technology, Tokyo, Japan
 
-S.E. Scheklein, Professor, Ural Federal University – Ural Polwer Engineering Institute
+S.E. Shcheklein, Professor, Ural Federal University – Ural Power Engineering Institute
 
 A.N. Shmelyov, Professor, National Research Nuclear University MEPhI
 
