@@ -9,33 +9,22 @@ title = "Editor-in Chief's Page"
 <img src="/img/chief.jpg" class="img-responsive" alt="Chief photo" width="40%" align="right">
 
 
-Yury A. Kazansky is a Doctor of Science in Physics and Mathematics (1978), Professor (1985),
-Academician of the International Higher Education Academy of Sciences (1994), Honored
-Worker of Science and Engineering (1995). Born in Saint-Petersburg on 18.10.1930, he took a
-degree in Physics and Engineering at the Moscow Engineering Physics Institute (now the
-National Nuclear Research University MEPhI) in 1954.
+Yuriy Alekseyevich Kazansky - Doctor of Physical and Mathematical Sciences (1978), Professor (1985), Academician of the International Academy of Higher Schooling Sciences (1994), Honored Worker in Science and Technology of Russia (1995).
 
-In 1954 – 1985 Yury A. Kazansky worked at SSC RF IPPE. His research interests centered on
-small-scale radiation shielding for submarines, physics and engineering of fast neutron reactors
-(experimental and physics research of reactor cores and their mock-ups, the nuclear fuel cycle,
-and, in particular, the problems of transmutation, nuclear reactor kinetics and dynamics).
+Born on October 18, 1930, in St. Petersburg.
 
-In 1985 – 2001 Yury A. Kazansky worked as Rector of the Obninsk Institue for Nuclear Power
-Engineering.
+Received a diploma as an engineer-physicist in 1954 from the Moscow Institute of Physics and Technology (now National Research Nuclear University MEPhI).
 
-Since 2001 Yury A. Kazansky has worked as Professor of the Reactor Design and Engineering
-Department at the Institute for Nuclear Power Engineering, NNRU MEPhI.
+From 1954 to 1985, he worked at the Federal State Unitary Enterprise FIAN. His main areas of interest were miniaturized radiation protection for submarines, physics and technology of reactors on fast neutrons (experimental and physical research of active zones of reactors and their models, fuel cycle, particularly problems of transmutation, kinetics, and dynamics of nuclear reactors).
 
-At present Yury A. Kazansky is Editor-in Chief of the journal and member of the Editorial Board
-of the Independent Journal for Nuclear Engineering Kerntechnic. He is Chairman of the
-Dissertation Council of the Institute for Nuclear Power Engineering, NNRU MEPhI, member of
-the SSC RF IPPE Dissertation Council, Presidium member of the Russian Nuclear Society.
+From 1985 to 2001, he was the Rector of the Obninsk Institute of Atomic Energy.
 
-Yury A. Kazansky was awarded an order and several medals for his pioneering work on
-submarines and for his computational and experimental work on fast neutron reactors.
+Since 2001, he has been a Professor at the Department of Reactor Calculation and Design at MEPhI.
 
-<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7 (48439) 35678; +7 (48439) 70861
+Scientific-public work: Chief Editor of a journal, member of the editorial board of another journal. Member of the Presidium of the Nuclear Society of Russia.
 
-<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> [kazansky@iate.obninsk.ru](mailto:kazansky@iate.obninsk.ru)
+Awarded with the Order of Honor, Medal for Labor Merit, and Medal of the Order of Merit to the Fatherland II degree for his works on atomic submarines and for calculation-experimental research on reactors on fast neutrons.
 
-<span class="glyphicon glyphicon-globe" aria-hidden="true"></span> [nuclear-power-engineering.ru/en/chief](http://nuclear-power-engineering.ru/en/chief/)
+Honorary citizen of the city of Obninsk.
+
+<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7 (484) 397-94-90, доб. 132
