@@ -133,3 +133,15 @@ rubric_name="Применение ядерных методов и средст�
 rubric="applicationofnucleartech"
 rubric_name="Application of nuclear tech"
 ```
+
+### Подготовка кадров
+
+```toml
+rubric="training"
+rubric_name="Подготовка кадров"
+```
+
+```toml
+rubric="training"
+rubric_name="Personnel training"
+```

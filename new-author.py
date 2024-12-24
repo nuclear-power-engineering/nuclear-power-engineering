@@ -1,20 +1,19 @@
 raw_work_ru = '''
-ФГБУ ГНЦ РФ ФМБЦ им. А.И. Бурназяна ФМБА России,
+Уральский федеральный университет,
 '''
 
 raw_author_ru = '''
-Еремина Наталья Александровна, младший научный сотрудник,
-E-mail: eremina-na@mail.ru
+Щеклеин Сергей Евгеньевич, д.т.н., зав. кафедрой «Атомные станции и ВИЭ»,
+E-mail: s.e.shcheklein@urfu.ru
 '''
 
 raw_work_en = '''
-State Research Center – Burnasyan Federal Medical Biophysical Center of the Federal Medical Biological Agency
-(SRC-FMBC),
+Ural Federal University,
 '''
 
 raw_author_en = '''
-Natalia A. Eremina, Junior Researcher,
-E-mail: eremina-na@mail.ru
+Sergei E. Shcheklein, Dr. Sci. (Engineering), Professor, head of the Nuclear Power Plants and Renewable Energy Sources Department,
+E-mail: s.e.shcheklein@urfu.ru
 '''
 
 # Get the surname.
@@ -77,6 +76,8 @@ def trim_work(raw):
 def get_regals(raw):
     start = raw.find(',') + 2
     stop = raw.find('E-mail')
+    if stop == -1:
+        stop = raw.find('Email')
     return trim_work(raw[start:stop])
 
 # Get email.
@@ -85,9 +86,13 @@ def get_email(raw):
     prefix = 'E-mail: '
     prefix_index = raw.find(prefix)
     if prefix_index == -1:
-        return ""
+        prefix = 'Email: '
+        prefix_index = raw.find(prefix)
+        if prefix_index == -1:
+            return ""
     start = prefix_index + len(prefix)
-    return f'email="{trim_work(raw[start:])}"'
+    email = trim_work(raw[start:]).removesuffix('.')
+    return f'email="{email}"'
 
 def get_ru_filename():
     return f'data/authors/{get_term()}.toml'
