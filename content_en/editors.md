@@ -55,8 +55,6 @@ M.Saito, Professor, Tokyo Institute of Technology, Tokyo, Japan
 
 S.E. Shcheklein, Professor, Ural Federal University – Ural Power Engineering Institute
 
-A.N. Shmelyov, Professor, National Research Nuclear University MEPhI
-
 V.P. Smirnov, Professor, SOSNY Research and Development Company, Dimitrovgrad
 
 S.L. Soloviev, Professor, VNIIAES JSC Scientific Director, Moscow
