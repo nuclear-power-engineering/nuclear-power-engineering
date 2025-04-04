@@ -1,19 +1,19 @@
 raw_work_ru = '''
-Уральский федеральный университет,
+АО «ГНЦ РФ – ФЭИ»,
 '''
 
 raw_author_ru = '''
-Щеклеин Сергей Евгеньевич, д.т.н., зав. кафедрой «Атомные станции и ВИЭ»,
-E-mail: s.e.shcheklein@urfu.ru
+Троянов Владимир Михайлович, научный руководитель, д.т.н.,
+E-mail: vmtroyanov@ippe.ru
 '''
 
 raw_work_en = '''
-Ural Federal University,
+IPPE JSC,
 '''
 
 raw_author_en = '''
-Sergei E. Shcheklein, Dr. Sci. (Engineering), Professor, head of the Nuclear Power Plants and Renewable Energy Sources Department,
-E-mail: s.e.shcheklein@urfu.ru
+Vladimir M. Troyanov, Scientific Director, Dr. Sci. (Engineering),
+E-mail: vmtroyanov@ippe.ru
 '''
 
 # Get the surname.
@@ -124,7 +124,7 @@ def main():
     print(get_ru_filename())
     print(author_ru)
     write_string_to_file(get_ru_filename(), author_ru)
-    print(get_ru_filename())
+    print(get_en_filename())
     print(author_en)
     write_string_to_file(get_en_filename(), author_en)
 

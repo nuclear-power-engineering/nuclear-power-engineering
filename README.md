@@ -122,6 +122,18 @@ rubric="modeling"
 rubric_name="Modelling processes at nuclear facilities"
 ```
 
+### Ядерная медицина
+
+```toml
+rubric="medicine"
+rubric_name="Ядерная медицина"
+```
+
+```toml
+rubric="medicine"
+rubric_name="Nuclear medicine and biology"
+```
+
 ### Применение ядерных методов и средств
 
 ```toml
@@ -144,4 +156,16 @@ rubric_name="Подготовка кадров"
 ```toml
 rubric="training"
 rubric_name="Personnel training"
+```
+
+### История науки
+
+```toml
+rubric="history"
+rubric_name="История науки"
+```
+
+```toml
+rubric="history"
+rubric_name="History of science"
 ```
