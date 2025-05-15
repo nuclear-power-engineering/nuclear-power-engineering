@@ -11,6 +11,46 @@
                 {{ partial "aside.html" . }}
             </div>
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                <header>
+                    <div class="panel panel-default card-md">
+                        <div class="panel-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h2> 
+                                        {{if eq $.Site.LanguageCode "ru-ru"}} Выпуск {{else}} Issue {{end}}
+                                        {{ $f := index .Data.Pages 0}}
+                                        {{ $f.Params.issue_name }} 
+                                    </h2>
+                                    <span class="plank-span">
+                                        <span class="glyphicon glyphicon-time" aria-hidden="true"></span> 
+                                            {{if eq $.Site.LanguageCode "ru-ru"}} {{dateFormat "02.01.2006" $f.Date }} {{else}} {{dateFormat "1/02/2006" $f.Date }} {{end}}
+                                    </span>
+                                </div>
+                                {{ with .Page.Resources.Get "cover.png" }}
+                                    <div class="media-right btn" data-toggle="modal" data-target="#myModal">
+                                        <img src="{{ .RelPermalink }}" alt="cover" style="max-height: 200px; height: auto;"/>
+                                    </div>
+                                {{ end }}
+                            </div>
+                        </div>  
+                    </div>
+                    {{ with .Page.Resources.Get "cover.png" }}
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">{{if eq $.Site.LanguageCode "ru-ru"}} Обложка {{else}} Cover {{end}}</h4>
+                              </div>
+                              <div class="modal-body">
+                                <img src="{{ .RelPermalink }}" class="img-responsive" alt="cover"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    {{ end }}
+                </header>
+
                 <article>
 
                     {{ range .Data.Pages.ByWeight}}
