@@ -7,7 +7,7 @@ title = "Editorial board"
 
 ### Editor in chief
 
-Y.A. Kazansky , Professor , Obninsk Institute of Nuclear Energy MEPhI
+V.M. Troyanov, IPPE JSC
 
 ### Associate Editors
 
@@ -26,6 +26,9 @@ F.D’Auria, Professor, University of Pisa, Pisa, Italy
 T.A. Burtseva, Assistant Professor, MIREA – Russian Technological University, Moscow
 
 S.M. Dmitriev, Professor, Nizhegorodskiy State Technical University
+
+Yu. A. Kazanskiy, Professor, Obninsk Institute for Nuclear Power Engineering National Research Nuclear
+University MEPhI
 
 V.V. Kharchenko, Corresponding member of NUAS, Professor, Institute for Problems of Strength, Kiev, Ukraine
 
@@ -62,8 +65,6 @@ S.L. Soloviev, Professor, VNIIAES JSC Scientific Director, Moscow
 V.A. Stepanov, Professor, Obninsk Institute for Nuclear Power Engineering, National Research Nuclear University MEPhI
 
 M.N. Strikhanov, Professor, National Research Nuclear University MEPhI
-
-V.M. Troyanov, IPPE JSC Scientific Director, Obninsk
 
 A.V. Zrodnikov, Professor, IPPE JSC, Obninsk
 

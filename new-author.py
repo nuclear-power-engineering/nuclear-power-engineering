@@ -1,19 +1,19 @@
 raw_work_ru = '''
-АО «ГНЦ РФ – ФЭИ»,
+Институт атомной энергии Национального ядерного центра Республики Казахстан,
 '''
 
 raw_author_ru = '''
-Троянов Владимир Михайлович, научный руководитель, д.т.н.,
-E-mail: vmtroyanov@ippe.ru
+Медетбеков Берик Сакенович, младший научный сотрудник,
+E-mail:medetbekov@nnc.kz
 '''
 
 raw_work_en = '''
-IPPE JSC,
+Institute of Atomic Energy of the National Nuclear Center of the Republic of Kazakhstan,
 '''
 
 raw_author_en = '''
-Vladimir M. Troyanov, Scientific Director, Dr. Sci. (Engineering),
-E-mail: vmtroyanov@ippe.ru
+Berik S. Medetbekov, Junior Researcher,
+E-mail: medetbekov@nnc.kz
 '''
 
 # Get the surname.
