@@ -3,7 +3,7 @@ import os
 import fitz
 from PIL import Image
 
-def crop_and_save(pdf_path, year, number, margin=10):
+def crop_and_save(pdf_path, year, number, top_margin=165, right_margin=360):
     # Create directory paths
     base_dirs = [
         f"content/issue/{year}-{number}",
@@ -28,14 +28,14 @@ def crop_and_save(pdf_path, year, number, margin=10):
     img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
     
     # Calculate crop area (right half with margin)
-    left = pix.width // 2 + margin
-    upper = margin
-    right = pix.width - margin
-    lower = pix.height - margin
+    left = pix.width // 2
+    upper = top_margin
+    right = pix.width - right_margin
+    lower = pix.height - top_margin
     
     # Validate crop dimensions
     if left >= right or upper >= lower:
-        raise ValueError(f"Crop area invalid. Page size: {pix.width}x{pix.height}px, margin: {margin}px")
+        raise ValueError(f"Crop area invalid. Page size: {pix.width}x{pix.height}px, top margin: {top_margin}px")
     
     # Crop and save to both directories
     cropped_img = img.crop((left, upper, right, lower))
