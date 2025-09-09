@@ -3,7 +3,7 @@ import os
 import fitz
 from PIL import Image
 
-def crop_and_save(pdf_path, year, number, top_margin=165, right_margin=360):
+def crop_and_save(pdf_path, year, number, top_margin=0, right_margin=0):
     # Create directory paths
     base_dirs = [
         f"content/issue/{year}-{number}",

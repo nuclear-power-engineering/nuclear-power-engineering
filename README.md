@@ -98,6 +98,18 @@ rubric="coolants"
 rubric_name="Chemistry, physics and technology of reactor coolants"
 ```
 
+### Вывод из эксплуатации
+
+```toml
+rubric="decommissioning"
+rubric_name="Вывод из эксплуатации"
+```
+
+```toml
+rubric="decommissioning"
+rubric_name="Decommissioning"
+```
+
 ### Экология ядерной энергетики
 
 ```toml

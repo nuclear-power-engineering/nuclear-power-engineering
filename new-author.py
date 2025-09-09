@@ -1,19 +1,19 @@
 raw_work_ru = '''
-Институт атомной энергии Национального ядерного центра Республики Казахстан,
+Белоярская АЭС,
 '''
 
 raw_author_ru = '''
-Медетбеков Берик Сакенович, младший научный сотрудник,
-E-mail:medetbekov@nnc.kz
+Полуяктов Сергей Александрович, заместитель главного инженера Белоярской АЭС,
+E-mail: polujaktov@belnpp.ru
 '''
 
 raw_work_en = '''
-Institute of Atomic Energy of the National Nuclear Center of the Republic of Kazakhstan,
+Beloyarsk NPP,
 '''
 
 raw_author_en = '''
-Berik S. Medetbekov, Junior Researcher,
-E-mail: medetbekov@nnc.kz
+Sergey A. Poluyaktov, Deputy Chief Engineer of Beloyarsk NPP,
+E-mail: polujaktov@belnpp.ru
 '''
 
 # Get the surname.
