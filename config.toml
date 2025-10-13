@@ -19,8 +19,6 @@ copyright = "Журнал «Известия вузов. Ядерная энер
   our_authors = "Наши авторы"
   to_top = "К началу"
 
-  yandex = "57b82e3c819d208c"
-
 [taxonomies]
   issue = "issue"
   authors = "authors"

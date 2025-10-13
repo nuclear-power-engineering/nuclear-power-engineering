@@ -18,8 +18,7 @@ copyright = "Izvestiya vuzov. Yadernaya Energetika"
   for_readers = "For readers"
   our_authors = "Our authors"
   to_top = "Back to top"
-  yandex = "57b82e3c819d208c"
-  
+
 
 [taxonomies]
 issue = "issue"
