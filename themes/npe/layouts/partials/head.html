@@ -8,7 +8,6 @@
     <meta name="description" content="{{ substr $desc  0 150}}">
     <meta name="author" content="{{ .Site.Params.author }}">
     <meta name="yandex-verification" content="{{ .Site.Params.yandex }}" />
-    <meta name="google-site-verification" content="foOFemX6Xu-x7wv1FNduzB6geveXhQ9TrqBtZwYQBIQ" />
     <meta name="theme-color" content="#2196F3">
     <link rel="icon" href="favicon.ico"> {{ if .IsPage }}
     <link rel="canonical" href="{{.Permalink}}" />
@@ -16,17 +15,6 @@
     {{ else }}
     <title>{{ .Site.Title }}</title>
     {{ end }}
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?{{.Site.Params.google}}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '{{.Site.Params.google}}');
-    </script>
-
 
     <!-- Bootstrap core CSS -->
     <link href="{{ .Site.BaseURL }}/css/bootstrap.css" rel="stylesheet">
