@@ -6,6 +6,9 @@ publishdir = "public/en"
 dataDir = "data_en"
 copyright = "Izvestiya vuzov. Yadernaya Energetika"
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
   description = "The peer-reviewed scientific and technology journal. ISSN: 0204-3327"
   author = "Izvestiya vuzov. Yadernaya Energetika"

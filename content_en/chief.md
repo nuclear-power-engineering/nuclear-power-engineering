@@ -1,30 +1,40 @@
 +++
 date = "2016-04-13T16:36:18+03:00"
 draft = false
-title = "Editor-in Chief's Page"
+title = "Chief Editor"
 
 +++
 
 
-<img src="/img/chief.jpg" class="img-responsive" alt="Chief photo" width="40%" align="right">
+<img src="/img/Troyanov.jpg" class="img-responsive" alt="Chief photo" width="40%" align="right">
 
 
-Yuriy Alekseyevich Kazansky - Doctor of Physical and Mathematical Sciences (1978), Professor (1985), Academician of the International Academy of Higher Schooling Sciences (1994), Honored Worker in Science and Technology of Russia (1995).
+Troyanov Vladimir Mikhailovich was born on 02/11/1956 in the site of Maloyaroslavets-1, later named the city of Obninsk.
+He graduated from high school in the same city, then in 1979 from the Obninsk branch of the Moscow Institute of Engineering and Physics.
+He holds a diploma
+from MEPhI with a degree in 0310 &quot;Nuclear Power Plants and Installations&quot;.
 
-Born on October 18, 1930, in St. Petersburg.
+He has been working in the nuclear industry all his life:
 
-Received a diploma as an engineer-physicist in 1954 from the Moscow Institute of Physics and Technology (now National Research Nuclear University MEPhI).
+1979-2004 – at IPPE JSC (senior laboratory assistant – Senior researcher – Director of the Department of Reactor Materials and Technologies), received the degrees of Candidate of Technical Sciences (1988) and Doctor of Technical Sciences (2004), the academic title of Senior Researcher (1993) in the specialty &quot;Nuclear Power Engineering installations&quot;
 
-From 1954 to 1985, he worked at the Federal State Unitary Enterprise FIAN. His main areas of interest were miniaturized radiation protection for submarines, physics and technology of reactors on fast neutrons (experimental and physical research of active zones of reactors and their models, fuel cycle, particularly problems of transmutation, kinetics, and dynamics of nuclear reactors).
+2004 – 2009 – at TVEL JSC (Executive Director for Scientific and Technical Activities);
 
-From 1985 to 2001, he was the Rector of the Obninsk Institute of Atomic Energy.
+2009 – 2011 – at VNIINM JSC (First Deputy Director General for Science);
 
-Since 2001, he has been a Professor at the Department of Reactor Calculation and Design at MEPhI.
+2011 – 2012 – in JSC “SSC NIIAR” (Director);
 
-Scientific-public work: Chief Editor of a journal, member of the editorial board of another journal. Member of the Presidium of the Nuclear Society of Russia.
+2012 – 2015 – in the CHU ITPP &quot;Breakthrough&quot; (Chief technologist);
 
-Awarded with the Order of Honor, Medal for Labor Merit, and Medal of the Order of Merit to the Fatherland II degree for his works on atomic submarines and for calculation-experimental research on reactors on fast neutrons.
+2015 – 2021 – Rosenergoatom Concern JSC (Chief Technologist);
 
-Honorary citizen of the city of Obninsk.
+from 2021 to the present, he is the Scientific Director of IPPE JSC.
 
-<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7 (484) 397-94-90, доб. 132
+The main areas of scientific and technical interests are fuels and structural materials for nuclear power plants, thermomechanics and computational and experimental substantiation of nuclear power plants of various types and applications, and issues of system analysis in nuclear power engineering.
+
+Scientific and social work – member of the editorial board of the journals &quot;Atomic Energy&quot; and &quot;Izvestiya vuzov. Yadernaya Energetika&quot;.
+
+Veteran of labor.
+He holds State and Rosatom State Corporation awards, Rosenergoatom Concern JSC, Kaluga Region, Obninsk city honorary medals.
+
+<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7 (484) 397-94-90, ext. 132
