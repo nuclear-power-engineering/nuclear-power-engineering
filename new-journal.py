@@ -46,8 +46,8 @@ def crop_and_save(pdf_path, year, number, top_margin=0, right_margin=0):
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print("Usage: python script.py <input_file.pdf> <year> <issue_number>")
-        print("Example: python script.py magazine.pdf 2023 04")
+        print("Usage: python3 new-journal.py <input_file.pdf> <year> <issue_number>")
+        print("Example: python3 new-journal.py magazine.pdf 2023 04")
         sys.exit(1)
     
     pdf_file = sys.argv[1]

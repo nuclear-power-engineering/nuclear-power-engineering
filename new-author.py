@@ -1,19 +1,19 @@
 raw_work_ru = '''
-Белоярская АЭС,
+НИЯУ МИФИ,
 '''
 
 raw_author_ru = '''
-Полуяктов Сергей Александрович, заместитель главного инженера Белоярской АЭС,
-E-mail: polujaktov@belnpp.ru
+Рябева Елена Васильевна, директор ИФТИС, к.ф.-м.н.,
+E-mail: evryabeva@mephi.ru
 '''
 
 raw_work_en = '''
-Beloyarsk NPP,
+MEPhI,
 '''
 
 raw_author_en = '''
-Sergey A. Poluyaktov, Deputy Chief Engineer of Beloyarsk NPP,
-E-mail: polujaktov@belnpp.ru
+Elena V. Ryabeva, Director of Institute of Physics and Technology, Cand. Sci. (Phys.-Math.),
+E-mail: evryabeva@mephi.ru
 '''
 
 # Get the surname.

@@ -122,6 +122,18 @@ rubric="environmentalaspects"
 rubric_name="Environmental aspects of nuclear power"
 ```
 
+### Методы прямого преобразования ядерной энергии
+
+```toml
+rubric="directconversion"
+rubric_name="Методы прямого преобразования ядерной энергии"
+```
+
+```toml
+rubric="directconversion"
+rubric_name="Physics and methods for direct conversion of nuclear energy"
+```
+
 ### Моделирование процессов в объектах ядерной энергетики
 
 ```toml
@@ -132,6 +144,18 @@ rubric_name="Моделирование процессов в объектах �
 ```toml
 rubric="modeling"
 rubric_name="Modelling processes at nuclear facilities"
+```
+
+### Физика в ядерной энергетике
+
+```toml
+rubric="physics"
+rubric_name="Физика в ядерной энергетике"
+```
+
+```toml
+rubric="physics"
+rubric_name="Physics in nuclear power engineering"
 ```
 
 ### Ядерная медицина
