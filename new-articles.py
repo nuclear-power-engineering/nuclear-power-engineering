@@ -69,9 +69,9 @@ def write_string_to_file(filename, string):
 
 
 def main():
-    year=2025
-    date=f"{year}-12-10"
-    issue_number=4
+    year=2026
+    date=f"{year}-03-27"
+    issue_number=1
     # Make folder for the issue
     import os
     os.makedirs(f"content/article/{year}/{issue_number:02d}/", exist_ok=True)

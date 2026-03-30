@@ -1,19 +1,19 @@
 raw_work_ru = '''
-НИЯУ МИФИ,
+Уральский федеральный университет,
 '''
 
 raw_author_ru = '''
-Рябева Елена Васильевна, директор ИФТИС, к.ф.-м.н.,
-E-mail: evryabeva@mephi.ru
+Щеклеин Сергей Евгеньевич, зав. кафедрой «Атомные станции и ВИЭ», д.т.н.,
+E-mail: s.e.shcheklein@urfu.ru
 '''
 
 raw_work_en = '''
-MEPhI,
+Ural Federal University,
 '''
 
 raw_author_en = '''
-Elena V. Ryabeva, Director of Institute of Physics and Technology, Cand. Sci. (Phys.-Math.),
-E-mail: evryabeva@mephi.ru
+Sergey E. Shcheklein, Head of the Nuclear Power Plants and Renewable Energy Sources Department, Dr. Sci. (Engineering),
+E-mail: s.e.shcheklein@urfu.ru
 '''
 
 # Get the surname.
