@@ -70,13 +70,13 @@ def write_string_to_file(filename, string):
 
 def main():
     year=2026
-    date=f"{year}-03-27"
-    issue_number=1
+    date=f"{year}-05-18"
+    issue_number=2
     # Make folder for the issue
     import os
     os.makedirs(f"content/article/{year}/{issue_number:02d}/", exist_ok=True)
     os.makedirs(f"content_en/article/{year}/{issue_number:02d}/", exist_ok=True)
-    for article in range(1, 17):
+    for article in range(0, 17):
         print(get_ru_path(year, issue_number, article))
         write_string_to_file(
             get_ru_path(year, issue_number, article),
