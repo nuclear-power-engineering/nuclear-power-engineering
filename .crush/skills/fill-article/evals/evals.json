@@ -1,0 +1,23 @@
+{
+  "skill_name": "fill-article",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Fill article 01 from PDF /Users/djbelyak/Downloads/YaEn_2_2026/01.pdf for issue 2026-02. The stubs are at content/article/2026/02/01.md and content_en/article/2026/02/01.md.",
+      "expected_output": "Both RU and EN stubs filled with title, authors, rubric, udc, first_page, last_page, abstract, keywords, and references. Authors matched to existing TOML files. Rubric='currentissues'.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Fill article 03 from PDF /Users/djbelyak/Downloads/YaEn_2_2026/03.pdf for issue 2026-02.",
+      "expected_output": "Both stubs filled. Rubric='nuclearpowerplants'. Authors matched or created. Page numbers from PDF.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Fill article 00 (editorial) from PDF /Users/djbelyak/Downloads/YaEn_2_2026/0_03_Col_red_corr.pdf for issue 2026-02.",
+      "expected_output": "Only the RU stub filled with editorial content, rubric='editors'. No EN stub created.",
+      "files": []
+    }
+  ]
+}
