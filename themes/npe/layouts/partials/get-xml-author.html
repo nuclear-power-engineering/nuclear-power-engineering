@@ -1,0 +1,17 @@
+{{- /* Normalizes one author data TOML (data/authors/*.toml or data_en/authors/*.toml)
+      into a dict: surname, given, initials, org, email, regals, orcid (bare id).
+      Input: author data map. */ -}}
+{{- $arr := split (trim (.full_name | default "" | partial "get-xml-clean") " \n\r\t") " " -}}
+{{- $givenWords := after 1 $arr -}}
+{{- $initials := "" -}}
+{{- range $givenWords -}}{{- $initials = printf "%s%s." $initials (substr . 0 1) -}}{{- end -}}
+{{- $orcid := replace (string (.ORCID | default "")) "https://orcid.org/" "" -}}
+{{- $orcid = replace $orcid "http://orcid.org/" "" -}}
+{{- return dict
+    "surname" (index $arr 0)
+    "given" (delimit $givenWords " ")
+    "initials" $initials
+    "org" (.work | default "" | partial "get-xml-clean")
+    "email" (.email | default "" | partial "get-xml-clean")
+    "regals" (.regals | default "" | partial "get-xml-clean")
+    "orcid" $orcid -}}

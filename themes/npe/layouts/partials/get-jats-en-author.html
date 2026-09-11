@@ -1,0 +1,6 @@
+{{- /* Reads the EN author profile TOML (data_en/authors/<term>.toml).
+      Input: author term string. Missing file → empty dict. */ -}}
+{{- $m := dict -}}
+{{- $p := path.Join "data_en" "authors" (printf "%s.toml" .) -}}
+{{- if fileExists $p -}}{{- $m = transform.Unmarshal (readFile $p) -}}{{- end -}}
+{{- return $m -}}

@@ -1,0 +1,9 @@
+{{- /* Returns []string of abstract paragraphs (plain text) extracted from page body
+      (everything before the first h3 heading). Input: page context. */ -}}
+{{- $parts := split .Content "<h3" -}}
+{{- $paras := slice -}}
+{{- range findRE "(?s)<p>.*?</p>" (index $parts 0) -}}
+  {{- $text := trim (plainify .) " \n\r\t" | replaceRE "\\s+" " " | replaceRE "[\\x00-\\x08\\x0B\\x0C\\x0E-\\x1F]" "" -}}
+  {{- if ne $text "" -}}{{- $paras = $paras | append $text -}}{{- end -}}
+{{- end -}}
+{{- return $paras -}}

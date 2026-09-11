@@ -1,0 +1,9 @@
+{{- /* Safe int conversion: leading zeros are stripped (Hugo treats them as octal
+      and fails on digits 8/9), non-numeric input returns 0. Input: string/int. */ -}}
+{{- $n := 0 -}}
+{{- $s := trim (string .) " \n\r\t" -}}
+{{- if findRE "^[0-9]+$" $s -}}
+  {{- if and (ge (len $s) 2) (eq (substr $s 0 1) "0") -}}{{- $s = substr $s 1 -}}{{- end -}}
+  {{- $n = int $s -}}
+{{- end -}}
+{{- return $n -}}

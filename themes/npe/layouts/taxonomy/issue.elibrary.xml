@@ -1,0 +1,135 @@
+{{- /* eLIBRARY.RU schema XML for one journal issue (for RSCI/elibrary.ru and RNZh).
+      One file per issue. Enabled on issue term pages via outputs=["HTML", "Elibrary"]. */ -}}
+{{- $langCode := "ENG" -}}
+{{- if eq .Site.LanguageCode "ru-ru" -}}{{- $langCode = "RUS" -}}{{- end -}}
+{{- /* term page .Title is unreliable (empty _index.md front matter), so take
+      the issue key ("YYYY-MM") from the issue's articles */ -}}
+{{- $issueKey := .Title | default "" -}}
+{{- with .Data.Pages -}}{{- $issueKey = (index . 0).Params.issue -}}{{- end -}}
+{{- $parts := split ($issueKey | default "") "-" -}}
+{{- $year := index $parts 0 -}}
+{{- $issueNum := "" -}}
+{{- if ge (len $parts) 2 -}}
+  {{- $issueNum = index $parts 1 -}}
+  {{- if eq (substr $issueNum 0 1) "0" -}}{{- $issueNum = substr $issueNum 1 1 -}}{{- end -}}
+{{- end -}}
+{{- $pages := where .Data.Pages "Params.number" "ne" "" -}}
+{{- /* order articles by their number (bare and zero-padded values both occur) */ -}}
+{{- range $pages -}}{{- $.Scratch.Set (printf "eart-%d" (partial "get-xml-int" .Params.number)) . -}}{{- end -}}
+{{- /* issue page range */ -}}
+{{- $minP := 0 -}}{{- $maxP := 0 -}}
+{{- range $pages -}}
+  {{- $fp := partial "get-xml-int" .Params.first_page -}}
+  {{- if and $fp (or (not $minP) (lt $fp $minP)) -}}{{- $minP = $fp -}}{{- end -}}
+  {{- $lp := partial "get-xml-int" .Params.last_page -}}
+  {{- if gt $lp $maxP -}}{{- $maxP = $lp -}}{{- end -}}
+{{- end -}}
+<?xml version="1.0" encoding="UTF-8"?>
+<journal>
+  <titleid>{{ .Site.Params.elibrary_titleid | default "" }}</titleid>  <issn>0204-3327</issn>
+{{- with .Site.Params.elibrary_eissn }}
+  <eissn>{{ . }}</eissn>
+{{- end }}
+  <journalInfo lang="{{ $langCode }}">
+    <title>{{ .Site.Title | html }}</title>
+  </journalInfo>
+  <issue>
+    <volume>{{ $year }}</volume>
+    <number>{{ $issueNum }}</number>
+{{- if and $minP $maxP }}
+    <pages>{{ $minP }}-{{ $maxP }}</pages>
+{{- end }}
+    <dateUni>{{ $year }}</dateUni>
+{{- with .Resources.GetMatch "cover*" }}
+    <files>
+      <file desc="cover">{{ .Permalink }}</file>
+    </files>
+{{- end }}
+    <articles>
+{{- $.Scratch.Set "prevRubric" "" }}
+{{- range $i := seq 1 99 }}
+  {{- with $.Scratch.Get (printf "eart-%d" $i) }}
+    {{- $page := . }}
+    {{- $rub := $page.Params.rubric_name | default "" }}
+    {{- if and $rub (ne $rub ($.Scratch.Get "prevRubric")) }}
+      <section>
+        <secTitle lang="{{ $langCode }}">{{ $rub | partial "get-xml-clean" | html }}</secTitle>
+      </section>
+    {{- end }}
+    {{- $.Scratch.Set "prevRubric" $rub }}
+      <article>
+{{- with $page.Params.first_page }}{{- with $page.Params.last_page }}
+        <pages>{{ $page.Params.first_page }}-{{ $page.Params.last_page }}</pages>
+{{- end }}{{- end }}
+        <artType>RAR</artType>
+        <authors>
+{{- $.Scratch.Set "authseq" 0 }}
+{{- range $page.Params.authors }}
+  {{- with index $page.Site.Data.authors . }}
+    {{- $a := partial "get-xml-author" . }}
+    {{- $.Scratch.Add "authseq" 1 }}
+          <author num="{{ printf "%03d" ($.Scratch.Get "authseq") }}">
+            <individInfo lang="{{ $langCode }}">
+              <surname>{{ $a.surname | html }}</surname>
+              <initials>{{ $a.initials | html }}</initials>
+    {{- with $a.org }}
+              <orgName>{{ . | html }}</orgName>
+    {{- end }}
+    {{- with $a.email }}
+              <email>{{ . | html }}</email>
+    {{- end }}
+            </individInfo>
+    {{- with $a.orcid }}
+            <authorCodes>
+              <orcid>{{ . }}</orcid>
+            </authorCodes>
+    {{- end }}
+          </author>
+  {{- end }}
+{{- end }}
+        </authors>
+        <artTitles>
+          <artTitle lang="{{ $langCode }}">{{ $page.Params.title | partial "get-xml-clean" | html }}</artTitle>
+        </artTitles>
+{{- $abstract := partial "get-xml-abstract" $page }}
+{{- with $abstract }}
+        <abstracts>
+          <abstract lang="{{ $langCode }}">{{ delimit . " " | html }}</abstract>
+        </abstracts>
+{{- end }}
+        <codes>
+          <doi>{{ replace $page.Params.doi "https://doi.org/" "" }}</doi>
+        </codes>
+{{- with $page.Params.tags }}
+        <keywords>
+          <kwdGroup lang="{{ $langCode }}">
+{{- range . }}
+            <keyword>{{ . | partial "get-xml-clean" | html }}</keyword>
+{{- end }}
+          </kwdGroup>
+        </keywords>
+{{- end }}
+{{- $refs := partial "get-xml-refs" $page }}
+{{- with $refs }}
+        <references>
+{{- range . }}
+          <reference>
+            <refInfo lang="{{ $langCode }}">
+              <text>{{ . | html }}</text>
+            </refInfo>
+          </reference>
+{{- end }}
+        </references>
+{{- end }}
+        <files>
+          <furl location="publisher" version="published">{{ $page.Permalink }}</furl>
+{{- with $page.Params.file }}
+          <file desc="fullText">{{ . }}</file>
+{{- end }}
+        </files>
+      </article>
+  {{- end }}
+{{- end }}
+    </articles>
+  </issue>
+</journal>

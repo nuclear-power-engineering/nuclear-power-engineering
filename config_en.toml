@@ -21,7 +21,24 @@ copyright = "Izvestiya vuzov. Yadernaya Energetika"
   for_readers = "For readers"
   our_authors = "Our authors"
   to_top = "Back to top"
+  # XML export (see AGENTS.md): elibrary.xml for RSCI/RNZh, jats.xml for IS "Metaphora"
+  elibrary_titleid = ""  # Journal ID in eLIBRARY.RU (publisher cabinet) — fill before upload
+  elibrary_eissn = ""
+  jats_publisher = "National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)"
+  jats_copyright_holder = "National Research Nuclear University MEPhI"
+  jats_copyright_statement = "© {holder}, {year}. All rights reserved."
 
+[outputFormats.DOI]
+mediaType = "application/xml"
+baseName = "doi"
+isPlainText = false
+isHTML = false
+
+[outputFormats.Elibrary]
+mediaType = "application/xml"
+baseName = "elibrary"
+isPlainText = true
+isHTML = false
 
 [taxonomies]
 issue = "issue"
@@ -117,11 +134,5 @@ rubric = "rubric"
 [[menu.for_readers]]
   name = "Subscription"
   url = "/subscription/"
-  weight = 4 
-
-[outputFormats.DOI]
-mediaType = "application/xml"
-baseName = "doi"
-isPlainText = false
-isHTML = false
+  weight = 4
 

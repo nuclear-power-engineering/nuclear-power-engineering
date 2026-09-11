@@ -1,0 +1,22 @@
+{{- /* Returns []string of reference texts (plain) extracted from page body.
+      References are a markdown ordered list after the first h3 heading
+      (### Ссылки / ### References); falls back to plain paragraphs. */ -}}
+{{- $refs := slice -}}
+{{- $h3Parts := split .Content "<h3" -}}
+{{- if gt (len $h3Parts) 1 -}}
+  {{- $closeParts := split (index $h3Parts 1) "</h3>" -}}
+  {{- if gt (len $closeParts) 1 -}}
+    {{- $tail := index $closeParts 1 -}}
+    {{- range findRE "(?s)<li>.*?</li>" $tail -}}
+      {{- $line := trim (plainify .) " \n\r\t" | replaceRE "\\s+" " " | replaceRE "[\\x00-\\x08\\x0B\\x0C\\x0E-\\x1F]" "" -}}
+      {{- if ne $line "" -}}{{- $refs = $refs | append $line -}}{{- end -}}
+    {{- end -}}
+    {{- if not $refs -}}
+      {{- range findRE "(?s)<p>.*?</p>" $tail -}}
+        {{- $line := trim (plainify .) " \n\r\t" | replaceRE "\\s+" " " | replaceRE "[\\x00-\\x08\\x0B\\x0C\\x0E-\\x1F]" "" -}}
+        {{- if ne $line "" -}}{{- $refs = $refs | append $line -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $refs -}}

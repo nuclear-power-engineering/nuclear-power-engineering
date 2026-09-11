@@ -18,6 +18,24 @@ copyright = "Журнал «Известия вузов. Ядерная энер
   for_readers = "Читателям"
   our_authors = "Наши авторы"
   to_top = "К началу"
+  # Экспорт XML (см. AGENTS.md): elibrary.xml для РИНЦ/РНЖ, jats.xml для ИС «Метафора»
+  elibrary_titleid = ""  # ID журнала в eLIBRARY.RU (личный кабинет издателя) — заполнить перед загрузкой
+  elibrary_eissn = ""
+  jats_publisher = "Национальный исследовательский ядерный университет «МИФИ»"
+  jats_copyright_holder = "Национальный исследовательский ядерный университет «МИФИ»"
+  jats_copyright_statement = "© {holder}, {year}. Все права защищены."
+
+[outputFormats.JATS]
+mediaType = "application/xml"
+baseName = "jats"
+isPlainText = true
+isHTML = false
+
+[outputFormats.Elibrary]
+mediaType = "application/xml"
+baseName = "elibrary"
+isPlainText = true
+isHTML = false
 
 [taxonomies]
   issue = "issue"

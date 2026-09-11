@@ -2,6 +2,7 @@ def get_ru_header(year, date, issue_number, article_number):
     return f'''+++
 
 categories="article"
+outputs=["HTML", "JATS"]
 date="{date}T00:{(30-article_number):02d}:00+03:00"
 issue="{year}-{issue_number:02d}"
 issue_name="{year} - №{issue_number:02d}"
@@ -77,14 +78,17 @@ def main():
     os.makedirs(f"content/article/{year}/{issue_number:02d}/", exist_ok=True)
     os.makedirs(f"content_en/article/{year}/{issue_number:02d}/", exist_ok=True)
     for article in range(0, 17):
+        ru_header = get_ru_header(year, date, issue_number, article)
+        en_header = get_en_header(year, date, issue_number, article)
+        if article == 0:
+            # Editor column: no DOI, excluded from XML exports
+            ru_header = ru_header.replace('outputs=["HTML", "JATS"]\n', '')
         print(get_ru_path(year, issue_number, article))
         write_string_to_file(
-            get_ru_path(year, issue_number, article),
-            get_ru_header(year, date, issue_number, article))
+            get_ru_path(year, issue_number, article), ru_header)
         print(get_en_path(year, issue_number, article))
         write_string_to_file(
-            get_en_path(year, issue_number, article),
-            get_en_header(year, date, issue_number, article))
+            get_en_path(year, issue_number, article), en_header)
 
 
 if __name__ == '__main__':

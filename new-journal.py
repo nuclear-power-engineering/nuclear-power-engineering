@@ -13,9 +13,9 @@ def crop_and_save(pdf_path, year, number, top_margin=0, right_margin=0):
     # Create directories if they don't exist
     for dir_path in base_dirs:
         os.makedirs(dir_path, exist_ok=True)
-        # Create empty _index.md files
+        # Create _index.md with XML export outputs
         with open(os.path.join(dir_path, "_index.md"), 'w') as f:
-            pass
+            f.write('+++\noutputs=["HTML", "Elibrary"]\n+++\n')
     
     # Process PDF
     doc = fitz.open(pdf_path)

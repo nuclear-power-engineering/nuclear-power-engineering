@@ -1,0 +1,48 @@
+{{- /* Reads the EN sibling article file (content_en/<same path>) and returns a dict:
+      title, rubric_name, tags, abstract (plain text), refs ([]string, numbering stripped).
+      Input: RU article page. Missing sibling → empty values. */ -}}
+{{- $out := dict "title" "" "rubric_name" "" "tags" slice "abstract" "" "refs" slice -}}
+{{- with .File -}}
+{{- $enPath := path.Join "content_en" .Path -}}
+{{- if fileExists $enPath -}}
+  {{- $chunks := split (readFile $enPath) "+++" -}}
+  {{- if gt (len $chunks) 2 -}}
+    {{- $meta := transform.Unmarshal (index $chunks 1) -}}
+    {{- $body := index $chunks 2 -}}
+    {{- /* split the body at the references heading (a few EN files use the RU heading) */ -}}
+    {{- $head := $body -}}
+    {{- $tail := "" -}}
+    {{- $refParts := split $body "### References" -}}
+    {{- if ge (len $refParts) 2 -}}
+      {{- $head = index $refParts 0 -}}
+      {{- $tail = index $refParts 1 -}}
+    {{- else -}}
+      {{- $refParts := split $body "### Ссылки" -}}
+      {{- if ge (len $refParts) 2 -}}
+        {{- $head = index $refParts 0 -}}
+        {{- $tail = index $refParts 1 -}}
+      {{- end -}}
+    {{- end -}}
+    {{- /* EN abstract: join the non-empty body lines */ -}}
+    {{- $lines := slice -}}
+    {{- range split $head "\n" -}}
+      {{- $l := trim . " \n\r\t" -}}
+      {{- if ne $l "" -}}{{- $lines = $lines | append $l -}}{{- end -}}
+    {{- end -}}
+    {{- $abs := delimit $lines " " | replaceRE "[\\x00-\\x08\\x0B\\x0C\\x0E-\\x1F]" "" | replaceRE "\\s+" " " -}}
+    {{- /* EN references: numbered lines after the heading */ -}}
+    {{- $refs := slice -}}
+    {{- range split $tail "\n" -}}
+      {{- $l := trim . " \n\r\t" | replaceRE "^[0-9]+[.)]\\s*" "" | replaceRE "[\\x00-\\x08\\x0B\\x0C\\x0E-\\x1F]" "" -}}
+      {{- if ne $l "" -}}{{- $refs = $refs | append $l -}}{{- end -}}
+    {{- end -}}
+    {{- $out = dict
+        "title" ($meta.title | default "")
+        "rubric_name" ($meta.rubric_name | default "")
+        "tags" ($meta.tags | default slice)
+        "abstract" $abs
+        "refs" $refs -}}
+  {{- end -}}
+{{- end -}}
+{{- end -}}
+{{- return $out -}}
